@@ -1,0 +1,10 @@
+.panel-row-style-homePage .textwidget {
+    margin-top: 50px;
+    border-top: 1px solid #ec312c;
+    width: 80%;
+    padding-top: 50px;
+}
+
+.panel-row-style-homePage img {
+    width: 100%;
+}
