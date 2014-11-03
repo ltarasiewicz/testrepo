@@ -1,3 +1,4 @@
+/* Home Page Page Builder rows */
 .panel-row-style-homePage .textwidget {
     margin-top: 50px;
     border-top: 1px solid #ec312c;
@@ -5,6 +6,88 @@
     padding-top: 50px;
 }
 
+.panel-row-style-homePage .textwidget p {
+    margin-left: 63px;
+}
+
 .panel-row-style-homePage img {
     width: 100%;
+}
+
+.panel-row-style-homePage h3 {
+    display: inline-block;
+    line-height: 50px;
+    width: 200px;
+    background-color: #ec312c;
+    color: #fff;
+    vertical-align: middle;
+    padding-left: 30px;    
+}
+
+/* My Pages Page Builder rows */
+
+.panel-row-style-myPages {
+    overflow: hidden;
+}
+
+.panel-row-style-myPages h3 {
+    color: #fff;  
+}
+
+.panel-row-style-myPages .widget_black-studio-tinymce .textwidget {
+    font-size: 24px;
+    
+}
+.panel-row-style-myPages .widget_black-studio-tinymce .textwidget p {    
+    border-bottom: 1px solid #ec312c;  
+    padding-bottom: 105px;
+    margin-bottom: 96px;
+}
+
+.panel-row-style-myPages .widget_text .textwidget {
+    margin-bottom: 42px;
+}
+
+.panel-row-style-myPages img {
+    max-width: 100%;
+    height: auto;
+}
+
+.panel-row-style-myPages #gallery-2, #gallery-3 img{
+    float: right;
+}
+
+.panel-row-style-myPages {
+    margin: 0 9.2%;
+}
+
+/* Testimonials Page Builder rows */
+
+.panel-row-style-myTestimonials {
+    margin: 0 9.2%;
+}
+
+.panel-row-style-myTestimonials .widget_black-studio-tinymce > h3{
+    display: inline-block;
+    line-height: 50px;
+    width: 360px;
+    background-color: #ec312c;
+    color: #fff;
+    vertical-align: middle;
+    padding-left: 30px;
+}
+
+.panel-row-style-myTestimonials h3 {
+    color: #fff;  
+    margin-bottom: 40px;
+}
+
+.panel-row-style-myTestimonials .textwidget {
+    padding-left: 0 !important;
+}
+
+
+/* Awards & Media Page Builder rows */
+.panel-row-style-myAwards #gallery-2, #gallery-3 img{
+    float: none;
 }

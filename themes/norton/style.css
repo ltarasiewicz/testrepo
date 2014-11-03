@@ -832,9 +832,13 @@ button:hover {
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  color: #DA4453;
+  color: #656565 !important;
   background-color: transparent;
 }
+
+
+
+
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
@@ -842,6 +846,7 @@ button:hover {
   color: #fff;
   background-color: #DA4453;
 }
+
 .dropdown-menu {
   font-size: 13px;
 }
@@ -875,7 +880,7 @@ button:hover {
 .dropdown-menu>.active>a:hover,
 .dropdown-menu>.active>a:focus {
   background-color: #DA4453;
-  color: #fff;
+  color: #656565;
 }
 
 .dropdown-menu .divider {
@@ -1393,22 +1398,11 @@ button[type=submit],
 }
 
 .panel-grid-cell {
-    padding: 0 !important;
-}
-
-.post-inner-content h3 {
-    display: inline-block;
-    line-height: 50px;
-    width: 200px;
-    background-color: red;
-    color: #fff;
-    vertical-align: middle;
-    padding-left: 30px;
-    
+    //padding: 0 !important;
 }
 
 .post-inner-content .textwidget {
-    padding-left: 63px;
+   // padding-left: 63px;
 }
 
 .no-gutter [class*="col-"]:first-child  {
@@ -1466,7 +1460,6 @@ button[type=submit],
 } 
 
 .footer-widget-area .textwidget {
-    margin-top: 30px;
     line-height: 35px;
 }
 
