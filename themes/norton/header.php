@@ -102,4 +102,4 @@
 
 		<div class="container-fluid main-content-area">
 			<div class="row no-gutter">
-				<div id="content" class="main-content-inner col-sm-12 col-md-8 <?php echo of_get_option( 'site_layout' ); ?>">
+				<div id="content" class="main-content-inner col-sm-12 col-md-12 <?php echo of_get_option( 'site_layout' ); ?>">

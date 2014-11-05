@@ -197,6 +197,9 @@ function sparkling_scripts() {
   // Add custom styles for Page Builder
   wp_enqueue_style( 'page-builder', get_template_directory_uri().'/inc/css/page-builder.css' );  
   
+  // Style for contact form (Contact Form 7)
+  wp_enqueue_style( 'contact-form', get_template_directory_uri().'/inc/css/contact-form.css' );  
+  
   // Add Google Fonts
   wp_register_style( 'sparkling-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700|Roboto+Slab:400,300,700');
 
@@ -236,6 +239,9 @@ function sparkling_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+        
+    // Fade-in effects across the site    
+    wp_enqueue_script( 'fade-in-effect', get_template_directory_uri() . '/inc/js/fade-in.js', array('jquery'), '20141105', true );    
 }
 add_action( 'wp_enqueue_scripts', 'sparkling_scripts' );
 

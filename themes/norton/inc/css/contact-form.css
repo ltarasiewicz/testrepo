@@ -1,0 +1,13 @@
+.wpcf7 input {
+    border-radius: 0 !important;
+    width: 100%
+}
+
+.wpcf7 input[type=submit] {
+    background-color: #ec312c;
+}
+
+.wpcf7 textarea {
+    border-radius: 0;
+}
+

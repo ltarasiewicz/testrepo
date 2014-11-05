@@ -23,3 +23,15 @@ function myAwards_panels_row_styles($styles) {
 	return $styles;
 }
 add_filter('siteorigin_panels_row_styles', 'myAwards_panels_row_styles');
+
+function myContact_panels_row_styles($styles) {
+	$styles['myContact'] = __('Contact', 'sparkling');
+	return $styles;
+}
+add_filter('siteorigin_panels_row_styles', 'myContact_panels_row_styles');
+
+function myHomestyles_panels_row_styles($styles) {
+	$styles['myHomestyles'] = __('Homestyles', 'sparkling');
+	return $styles;
+}
+add_filter('siteorigin_panels_row_styles', 'myHomestyles_panels_row_styles');

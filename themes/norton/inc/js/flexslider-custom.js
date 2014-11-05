@@ -22,9 +22,7 @@ jQuery(document).ready(function($){$(window).load(function(){
 	    pauseOnHover: false,            //Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
 	    pauseInvisible: true,       		//{NEW} Boolean: Pause the slideshow when tab is invisible, resume when visible. Provides better UX, lower CPU usage.
 	    useCSS: true,                   //{NEW} Boolean: Slider will use CSS3 transitions if available
-	    touch: true,                    //{NEW} Boolean: Allow touch swipe navigation of the slider on touch-enabled devices
-            minItems: 2,
-            maxItems: 4
+	    touch: true                    //{NEW} Boolean: Allow touch swipe navigation of the slider on touch-enabled devices
 
 });
 
@@ -51,7 +49,7 @@ jQuery(document).ready(function($){$(window).load(function(){
 	    useCSS: true,                   //{NEW} Boolean: Slider will use CSS3 transitions if available
 	    touch: true                    //{NEW} Boolean: Allow touch swipe navigation of the slider on touch-enabled devices
 
-});     
+    });     
 });
 });
 
