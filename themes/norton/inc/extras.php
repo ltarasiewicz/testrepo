@@ -250,7 +250,7 @@ function sparkling_featured_slider() {
         $count = of_get_option( 'sparkling_slide_number' );
         $slidecat =of_get_option( 'sparkling_slide_categories' );
 
-        $query = new WP_Query( array( 'post_type' => 'home-style' ) );
+        $query = new WP_Query( array( 'category__in' =>$slidecat,'posts_per_page' =>$count, 'post_type' => 'home-style' ) );
         if ($query->have_posts()) :
           while ($query->have_posts()) : $query->the_post();
 
