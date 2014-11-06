@@ -205,8 +205,8 @@ function sparkling_scripts() {
 
   wp_enqueue_style( 'sparkling-fonts' );
 
-  // Add slider CSS only if is front page ans slider is enabled
-  if( ( is_home() || is_front_page() ) && of_get_option('sparkling_slider_checkbox') == 1 ) {
+  // Add slider CSS only if is front page ans slider is enabled or it is a single post
+  if( (( is_home() || is_front_page() ) && of_get_option('sparkling_slider_checkbox') == 1) || is_single() ) {
 		wp_enqueue_style( 'flexslider-css', get_template_directory_uri().'/inc/css/flexslider.css' );
   }
 
@@ -220,9 +220,9 @@ function sparkling_scripts() {
 	wp_enqueue_script('sparkling-bootstrapjs', get_template_directory_uri().'/inc/js/bootstrap.min.js', array('jquery') );
 
   // Add slider JS only if is front page ans slider is enabled
-	if( ( is_home() || is_front_page() ) && of_get_option('sparkling_slider_checkbox') == 1 ) {
+	if( (( is_home() || is_front_page() ) && of_get_option('sparkling_slider_checkbox') == 1) || is_single() ) {
 		wp_enqueue_script( 'flexslider-js', get_template_directory_uri() . '/inc/js/flexslider.min.js', array('jquery'), '20140222', true );
-	}
+	}         
 
   // Flexslider customization
   if( ( is_home() || is_front_page() ) && of_get_option('sparkling_slider_checkbox') == 1 ) {

@@ -40,6 +40,27 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2014 Automatt
 
 /* =Global
 ----------------------------------------------- */
+
+
+@font-face {
+    font-family: Proxima Nova Bold;
+    src: url('inc/fonts/Proxima Nova Bold.otf');
+}
+
+@font-face {
+    font-family: Proxima Nova Semibold;
+    src: url('inc/fonts/Proxima Nova Semibold.otf');
+}
+
+@font-face {
+    font-family: Proxima Nova Light;
+    src: url('inc/fonts/Proxima Nova Light.otf');
+}
+
+strong {
+    font-weight: 600;
+}
+
 body {
   background-color: #000;
   word-wrap: break-word;
@@ -1030,9 +1051,7 @@ p.logged-in-as {
 
 /* =Gallery
 -------------------------------------------------------------- */
-.gallery {
-  margin-bottom: 20px;
-}
+
 .gallery-item {
   float: left;
   margin: 0 4px 4px 0;
@@ -1179,6 +1198,8 @@ p.logged-in-as {
 .copyright {
   float: right;
   text-align: right;
+  font-family: Proxima Nova Bold;
+  font-size: 15px;
 }
 #colophon {
   background-color: #1F1F1F;
@@ -1397,28 +1418,18 @@ button[type=submit],
     margin: auto 0;
 }
 
-.panel-grid-cell {
-    //padding: 0 !important;
-}
-
-.post-inner-content .textwidget {
-   // padding-left: 63px;
-}
-
-.no-gutter [class*="col-"]:first-child  {
-    //padding-left:0;
-}
-
-.no-gutter [class*="col-"]:last-child {
-    //padding-right: 0;
-}
-
 #footer-area {
     margin: 0 -15px;
 }
 
 .footer-widget-area .textwidget {
     padding-left: 63px;
+
+}
+
+.footer-widget-area .textwidget p {
+    font-family: Proxima Nova Light;
+    font-size: 20px;
 
 }
 
@@ -1438,12 +1449,21 @@ button[type=submit],
     margin-right: 48px;
 }
 
+#menu-homepage-menu li > a {
+    font-family: Proxima Nova Bold;
+    font-size: 14px;
+}
+
 .menu-footer-menu-container {
     height: auto;
 }
 
 #footer-area ul > li {
     border: none;
+}
+
+#footer-area ul > li  {
+    font-family: Proxima Nova Bold;
 }
 
 .menu-footer-menu-container {
@@ -1475,6 +1495,7 @@ button[type=submit],
 #colophon ul > li {
     display: inline-block;
     margin-right: 30px;
+    font-size: 15px;
 }
 
 figure {

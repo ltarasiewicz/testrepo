@@ -7,12 +7,17 @@
 .panel-row-style-homePage .textwidget {
     margin-top: 50px;
     border-top: 1px solid #ec312c;
-    width: 80%;
+    width: 85%;
     padding-top: 50px;
+    
 }
 
 .panel-row-style-homePage .textwidget p {
     margin-left: 63px;
+    font-family: Proxima Nova Light;
+    font-size: 50px;
+    line-height: 70px;
+    
 }
 
 .panel-row-style-homePage img {
@@ -20,8 +25,10 @@
 }
 
 .panel-row-style-homePage h3 {
+    font-family: Proxima Nova Bold;
+    font-size: 18px;
     display: inline-block;
-    line-height: 50px;
+    line-height: 60px;
     width: 200px;
     background-color: #ec312c;
     color: #fff;
@@ -36,11 +43,15 @@
 }
 
 .panel-row-style-myPages h3 {
-    color: #fff;  
+    font-family: Proxima Nova Semibold !important;
+    font-size: 34px;
+    color: #fff;
+    font-weight: 600 !important;  
 }
 
 .panel-row-style-myPages .widget_black-studio-tinymce .textwidget {
-    font-size: 24px;
+    font-family: Proxima Nova Light;
+    font-size: 36px;
     
 }
 .panel-row-style-myPages .widget_black-studio-tinymce .textwidget p {    
@@ -51,6 +62,8 @@
 
 .panel-row-style-myPages .widget_text .textwidget {
     margin-bottom: 42px;
+    font-family: Proxima Nova Light;
+    font-size: 22px;    
 }
 
 .panel-row-style-myPages img {
@@ -175,6 +188,28 @@
 
 .row-margin {
     margin-bottom: 30px;
+}
+
+.intro-block {
+    border-bottom: 1px solid #ec312c;  
+    padding-bottom: 105px;
+    margin-bottom: 96px;    
+}
+
+.intro-block p {
+    font-family: Proxima Nova Light;
+    font-size: 36px;
+}
+
+.marginalized {
+    margin-bottom: 90px;
+}
+
+.marginalized h3 {
+    font-family: Proxima Nova Semibold !important;
+    font-size: 34px;
+    color: #fff;
+    font-weight: 600 !important;
 }
 
 /********************************/

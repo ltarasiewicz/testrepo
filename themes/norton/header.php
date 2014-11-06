@@ -88,14 +88,6 @@
                                     </div>
                                     <div class="col-md-3">
                                         <?php rotatingLeader_featured_slider(); ?>
-<!--                                        <div class="rotating-leader">
-                                            <img src="http://lorempixel.com/377/134/city/1/" />
-                                            <img src="http://lorempixel.com/377/134/city/2/" />
-                                            <img src="http://lorempixel.com/377/134/city/3/" />
-                                            <img src="http://lorempixel.com/377/134/city/4/" />
-                                            <img src="http://lorempixel.com/377/134/city/5/" />
-                                            <img src="http://lorempixel.com/377/134/city/6/" />
-                                        </div>    -->
                                     </div>                                
                                 </div>
                             </div>   

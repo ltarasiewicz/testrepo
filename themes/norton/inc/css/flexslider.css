@@ -102,6 +102,7 @@ html[xmlns] .slides {display: block;}
   margin: auto;
   bottom: 50px;
 }
+
 .flex-caption .excerpt {
   background: rgb(59, 59, 59);
   background: rgba(59, 59, 59, 0.8);
@@ -143,7 +144,27 @@ html[xmlns] .slides {display: block;}
 /* =Rotating Leader
 ----------------------------------------------- */
 
-.rotating-leader .flex-viewport {
-    
-    //height: 100% !important;
+.rotating-leader-caption {
+  position: absolute;
+  left: 15px;
+  right: 0;
+  bottom: calc(100% - 50px);
+  z-index: 1;
+  display: inline-block;
+  max-width: 100%;
+  margin: auto;
+
+
+}
+
+.rotating-leader-caption h2 {
+  background: rgb(218, 68, 83);
+  background: rgba(218, 68, 83, 0.7);
+  font-weight: 400;
+  font-size: 24px;
+  max-width: 640px;
+  display: inline-block;
+  padding: 12px 30px;
+  margin-bottom: 0;
+  color: #fff;
 }

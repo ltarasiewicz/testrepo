@@ -1,39 +1,31 @@
 <?php
 /**
- * The template used for displaying custom post type (home-style) content 
+ * The template used for displaying custom post type (project) content 
  * 
  * @package sparkling
  */
 ?>
 
-<?php
-    $currentId = get_the_ID();
-    $intoductoryText = get_post_meta($currentId, 'wpcf-homestyles-intoductory-text', true);
-?>
-
 <div class="post-inner-content">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header page-header">
-		<h1 class="entry-title"><?php //the_title(); ?></h1>
+            <div id="sliders">
+                <div class="row no-gutter">                              
+                    <div class="col-md-9">
+                        
+                    </div>
+                    <div class="col-md-3">
+                        
+                    </div>                                
+                </div>
+            </div> 
 	</header><!-- .entry-header -->
 
 	<div class="entry-content fixed-margin container">
-            
-            <div class="row">                
-                <div class="col-md-offset-4 col-md-8">
-                    <div class="intro-block">
-                        <p><?php echo $intoductoryText; ?></p>
-                        
-                    </div>                  
-                </div>
-                <div class="col-md-4 marginalized">
-                    <h3><?php the_title(); ?></h3>
-                </div>                 
-            </div>
-            
+                       
                 <?php //the_content(); ?>
                 <?php 
-                $currentCategory = get_the_category();
+                $currentCategory = get_the_category();                
                     $query = new WP_Query( array( 'post_type' => 'project', 'cat' => $currentCategory[0]->cat_ID) );
                     if ($query->have_posts()) :
                         $thumbnails = [];

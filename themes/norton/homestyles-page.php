@@ -7,6 +7,10 @@
 ?>
 
 <?php the_post_thumbnail( 'sparkling-featured', array( 'class' => 'single-featured' )); ?>
+<?php
+    $currentId = get_the_ID();
+    $intoductoryText = get_post_meta($currentId, 'wpcf-homestyles-intoductory-text', true);
+?>
 
 <div class="post-inner-content">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -18,10 +22,13 @@
 		<?php //the_content(); ?>
             <div class="row">                
                 <div class="col-md-offset-4 col-md-8">
-                    <p>Our designer homes whether they are contemporary, classical and modern or French provincial will reflect each client's individual style.</p>
+                    <div class="intro-block">
+                        <p><?php echo $intoductoryText; ?></p>
+                        
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h3>Contemporary</h3>
+                <div class="col-md-4 marginalized">
+                    <h3><?php the_title(); ?></h3>
                 </div>                
             </div>            
                                

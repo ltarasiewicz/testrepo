@@ -237,12 +237,13 @@ function sparkling_call_for_action() {
 }
 endif;
 
-if ( ! function_exists( 'sparkling_featured_slider' ) ) :
-/**
+if ( ! function_exists( 'sparkling_featured_slider' ) ) :   
+    
+ /**
  * Featured image slider, displayed on front page for static page and blog
  */
 function sparkling_featured_slider() {
-  if ( is_front_page() && of_get_option( 'sparkling_slider_checkbox' ) == 1 ) {
+  if ( (is_front_page() && of_get_option( 'sparkling_slider_checkbox' ) == 1) || is_single() ) {
     echo '<div class="flexslider">';
       echo '<ul class="slides">';
 
@@ -280,6 +281,11 @@ function sparkling_featured_slider() {
 function rotatingLeader_featured_slider() {
   if ( is_front_page() && of_get_option( 'sparkling_slider_checkbox' ) == 1 ) {
     echo '<div class="rotating-leader">';
+              echo '<div class="rotating-leader-caption">';
+                echo '<a href="'. get_permalink() .'">';
+                  if ( get_the_title() != '' ) echo '<h2 class="entry-title">'. get_the_title().'</h2>';
+                echo '</a>';
+              echo '</div>';     
       echo '<ul class="slides">';
 
         $count = of_get_option( 'sparkling_slide_number' );
@@ -290,17 +296,10 @@ function rotatingLeader_featured_slider() {
           while ($query->have_posts()) : $query->the_post();
 
           echo '<li>';
+         
             if ( (function_exists( 'has_post_thumbnail' )) && ( has_post_thumbnail() ) ) :
               echo get_the_post_thumbnail();
             endif;
-
-              echo '<div class="flex-caption">';
-                echo '<a href="'. get_permalink() .'">';
-                  if ( get_the_title() != '' ) echo '<h2 class="entry-title">'. get_the_title().'</h2>';
-                  if ( get_the_excerpt() != '' ) echo '<div class="excerpt">' . get_the_excerpt() .'</div>';
-                echo '</a>';
-              echo '</div>';
-
               endwhile;
             endif;
 
