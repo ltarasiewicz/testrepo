@@ -200,6 +200,9 @@ function sparkling_scripts() {
   // Style for contact form (Contact Form 7)
   wp_enqueue_style( 'contact-form', get_template_directory_uri().'/inc/css/contact-form.css' );  
   
+  // Style for contact form (Contact Form 7)
+  wp_enqueue_style( 'media-queries', get_template_directory_uri().'/inc/css/media-queries.css' );    
+  
   // Add Google Fonts
   wp_register_style( 'sparkling-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700|Roboto+Slab:400,300,700');
 

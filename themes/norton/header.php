@@ -76,17 +76,17 @@
 		</nav><!-- .site-navigation -->
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content container-fluid">
+	<div id="content" class="site-content container-fluid no-overflow">
 
 			<div class="top-section">                            
                             <div id="sliders">
                                 <div class="row no-gutter">                              
-                                    <div class="col-md-9">
+                                    <div class="col-sm-9">
                                         <?php sparkling_featured_slider(); ?>
                                         <?php sparkling_call_for_action(); ?>
 
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-sm-3">
                                         <?php rotatingLeader_featured_slider(); ?>
                                     </div>                                
                                 </div>

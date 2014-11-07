@@ -57,6 +57,11 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2014 Automatt
     src: url('inc/fonts/Proxima Nova Light.otf');
 }
 
+@font-face {
+    font-family: Proxima Nova Regular;
+    src: url('inc/fonts/Proxima Nova Regular.otf');
+}
+
 strong {
     font-weight: 600;
 }
@@ -189,10 +194,6 @@ textarea {
   padding-left: 3px;
   vertical-align: top; /* Improves readability and alignment in all browsers */
   width: 100%;
-}
-
-#sliders {
-    margin-top: 10px;
 }
 
 /* Alignment */
@@ -1407,6 +1408,14 @@ button[type=submit],
 
 /* Added styles */
 
+.top-section {
+    margin: 0 -15px;
+}
+
+.no-overflow {
+    overflow-x: hidden;
+}
+
 .panel {
     border: none;
     background-color: #000;
@@ -1423,7 +1432,7 @@ button[type=submit],
 }
 
 .footer-widget-area .textwidget {
-    padding-left: 63px;
+    padding-left: 48px;
 
 }
 
@@ -1438,15 +1447,35 @@ button[type=submit],
 }
 
 .navbar-header {
-   // margin-left: 63px;
+    margin-top: 15px
+}
+
+#menu-homepage-menu {
+    margin-top: 10px;
 }
 
 .navbar-brand {
     height: auto;
 }
+.navbar-default .navbar-toggle {
+    border: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff !important;
+}
+
+.navbar-collapse, .navbar-default {
+    border: none;
+}
+
+.navbar-collapse {
+    padding: 0;
+}
 
 #menu-homepage-menu {
-    margin-right: 48px;
+    margin: 0 !important;
+
 }
 
 #menu-homepage-menu li > a {
@@ -1490,6 +1519,7 @@ button[type=submit],
 
 #colophon ul {
     padding-left: 0;
+    margin-left: -15px;
 }
 
 #colophon ul > li {
@@ -1502,7 +1532,11 @@ figure {
     width: 100%;
 }
 
-#logo {    
-    margin-left: 63px;
+#logo img {    
+    height: auto !important;
+    max-width: 100%;
+}
 
+#logo {
+    margin-bottom: 15px;
 }

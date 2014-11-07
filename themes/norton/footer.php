@@ -27,15 +27,16 @@
 						<?php //sparkling_footer_links(); ?>
                                                 
 					</nav>-->
-                                        <div class="col-md-6">
+                                        <div class="col-sm-9">
                                             <ul>
                                                 <li>Copyright &copy; Norton Builders <?php echo date('Y');  ?></li>
                                                 <li><img src="http://norton-wp.dev/wp-content/uploads/2014/11/homepage-21.jpg" /></li>
-                                                <li><img src="http://norton-wp.dev/wp-content/uploads/2014/11/homepage-23.jpg" /></li>
+                                                <li><img src="http://norton-wp.dev/wp-content/uploads/2014/11/homepage-23.jpg" /></li>                                                
                                             </ul>
+                                            
                                         </div>
-					<div class="copyright col-md-6">
-						<?php echo of_get_option( 'custom_footer_text', 'sparkling' ); ?>
+					<div class="copyright col-sm-3">
+						<?php echo '<p>' . of_get_option( 'custom_footer_text', 'sparkling' ) . '</p>'; ?>
 						<?php //sparkling_footer_info(); ?>
 					</div>
 				</div>
