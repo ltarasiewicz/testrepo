@@ -5,7 +5,7 @@
 }
 
 .panel-row-style-homePage .textwidget {
-    margin-top: 50px;
+    margin-top: 165px;
     border-top: 1px solid #ec312c;
     width: 85%;
     padding-top: 50px;
@@ -30,11 +30,12 @@
     font-size: 18px;
     display: inline-block;
     line-height: 60px;
-    width: 200px;
+    width: 350px;
     background-color: #ec312c;
     color: #fff;
     vertical-align: middle;
-    padding-left: 30px;    
+    padding-left: 64px;   
+    text-transform: uppercase;
 }
 
 /* My Pages Page Builder rows */

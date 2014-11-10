@@ -131,11 +131,17 @@ h6,
   font-size: 13px;
 }
 
-#sliders img {
+.flexslider img {
   height: auto; /* Make sure images are scaled correctly. */
   max-width: 100%; /* Adhere to container width. */
-  width: 100%
 }
+
+.rotating-leader img {
+  height: 135px; /* Make sure images are scaled correctly. */
+  width: 100%; /* Adhere to container width. */
+}
+
+
 button,
 input,
 select,
@@ -1202,6 +1208,11 @@ p.logged-in-as {
   font-family: Proxima Nova Bold;
   font-size: 15px;
 }
+
+.copyright p {
+    white-space: nowrap;
+}
+
 #colophon {
   background-color: #1F1F1F;
 }
@@ -1522,6 +1533,10 @@ button[type=submit],
     margin-left: -15px;
 }
 
+#colophon ul li {
+    white-space: nowrap;
+}
+
 #colophon ul > li {
     display: inline-block;
     margin-right: 30px;
@@ -1534,7 +1549,7 @@ figure {
 
 #logo img {    
     height: auto !important;
-    max-width: 100%;
+    max-width: 250px;
 }
 
 #logo {

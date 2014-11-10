@@ -80,16 +80,19 @@
 
 			<div class="top-section">                            
                             <div id="sliders">
-                                <div class="row no-gutter">                              
-                                    <div class="col-sm-9">
-                                        <?php sparkling_featured_slider(); ?>
-                                        <?php sparkling_call_for_action(); ?>
-
+                            
+                                    
+                                    <div class="row no-gutter">                              
+                                        <div class="col-sm-9">
+                                            <?php sparkling_featured_slider(); ?>
+                                            <?php //sparkling_call_for_action(); ?>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <?php rotatingLeader_featured_slider(); ?>
+                                        </div>                                
                                     </div>
-                                    <div class="col-sm-3">
-                                        <?php rotatingLeader_featured_slider(); ?>
-                                    </div>                                
-                                </div>
+                                    
+                            
                             </div>   
 
 		<div class="container-fluid main-content-area">

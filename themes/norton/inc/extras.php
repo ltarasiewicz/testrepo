@@ -244,30 +244,32 @@ if ( ! function_exists( 'sparkling_featured_slider' ) ) :
  */
 function sparkling_featured_slider() {
   if ( (is_front_page() && of_get_option( 'sparkling_slider_checkbox' ) == 1) || is_single() ) {
-    echo '<div class="flexslider">';
+    echo '<div class="flexslider">';    
       echo '<ul class="slides">';
 
         $count = of_get_option( 'sparkling_slide_number' );
         $slidecat =of_get_option( 'sparkling_slide_categories' );
 
         $query = new WP_Query( array( 'category__in' =>$slidecat,'posts_per_page' =>$count, 'post_type' => 'home-style' ) );
+        
+    for($i=0; $i<5; $i++) {    
         if ($query->have_posts()) :
           while ($query->have_posts()) : $query->the_post();
-
           echo '<li>';
             if ( (function_exists( 'has_post_thumbnail' )) && ( has_post_thumbnail() ) ) :
               echo get_the_post_thumbnail();
             endif;
 
-              echo '<div class="flex-caption">';
+              echo '<div class="flex-caption" style="display: none">';
                 echo '<a href="'. get_permalink() .'">';
                   if ( get_the_title() != '' ) echo '<h2 class="entry-title">'. get_the_title().'</h2>';
                   if ( get_the_excerpt() != '' ) echo '<div class="excerpt">' . get_the_excerpt() .'</div>';
                 echo '</a>';
               echo '</div>';
-
-              endwhile;
-            endif;
+          endwhile;
+        endif;
+    }
+        
 
           echo '</li>';
       echo '</ul>';
@@ -280,31 +282,35 @@ function sparkling_featured_slider() {
  */
 function rotatingLeader_featured_slider() {
   if ( is_front_page() && of_get_option( 'sparkling_slider_checkbox' ) == 1 ) {
-    echo '<div class="rotating-leader">';
-              echo '<div class="rotating-leader-caption">';
-                echo '<a href="'. get_permalink() .'">';
-                  if ( get_the_title() != '' ) echo '<h2 class="entry-title">'. get_the_title().'</h2>';
-                echo '</a>';
-              echo '</div>';     
+        echo '<div class="rotating-leader">';
+        
       echo '<ul class="slides">';
 
         $count = of_get_option( 'sparkling_slide_number' );
         $slidecat =of_get_option( 'sparkling_slide_categories' );
 
         $query = new WP_Query( array( 'post_type' => 'home-style' ) );
+    for($i=0; $i<5; $i++) {      
         if ($query->have_posts()) :
           while ($query->have_posts()) : $query->the_post();
-
           echo '<li>';
          
             if ( (function_exists( 'has_post_thumbnail' )) && ( has_post_thumbnail() ) ) :
               echo get_the_post_thumbnail();
-            endif;
+            endif;            
               endwhile;
             endif;
 
           echo '</li>';
+    }
       echo '</ul>';
+
+          echo '<div class="rotating-leader-caption">';
+            echo '<a href="'. get_permalink() .'">';
+              echo '<h2 class="entry-title"></h2>';
+            echo '</a>';
+          echo '</div>';       
+      
     echo ' </div>';
   }
 }

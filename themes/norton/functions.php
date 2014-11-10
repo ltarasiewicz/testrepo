@@ -207,6 +207,9 @@ function sparkling_scripts() {
   wp_register_style( 'sparkling-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700|Roboto+Slab:400,300,700');
 
   wp_enqueue_style( 'sparkling-fonts' );
+  
+  // Styles for making Bootstrap columns same height
+  wp_enqueue_style( 'same-height-columns', get_template_directory_uri().'/inc/css/same-height-columns.css' );    
 
   // Add slider CSS only if is front page ans slider is enabled or it is a single post
   if( (( is_home() || is_front_page() ) && of_get_option('sparkling_slider_checkbox') == 1) || is_single() ) {
@@ -245,6 +248,9 @@ function sparkling_scripts() {
         
     // Fade-in effects across the site    
     wp_enqueue_script( 'fade-in-effect', get_template_directory_uri() . '/inc/js/fade-in.js', array('jquery'), '20141105', true );    
+    
+    // Custom scripts   
+    wp_enqueue_script( 'custom-scripts', get_template_directory_uri() . '/inc/js/scripts.js', array('jquery', 'flexslider-customization'), '20141110', true);    
 }
 add_action( 'wp_enqueue_scripts', 'sparkling_scripts' );
 
