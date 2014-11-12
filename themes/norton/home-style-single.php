@@ -46,23 +46,28 @@
                             $homestylesPosts[$i] = get_post();
                             $i++;                         
                         endwhile;                        
-                    endif;                
+                    endif;    
                     
-                    $lists = array_chunk($thumbnails, 2);
-                    $x = 0;  
-                                foreach ($lists as $items) {
-                                    echo '<div class="row row-margin">';                                                           
-                                        foreach ($items as $item) {                                                                                                              
-                                            echo '<div class="col-md-6">';
-                                                echo '<div class="homestyle-tile">';
-                                                    echo $item;  
-                                                    echo '<a href="' . $permalinks[$x] . '">' . $homestylesPosts[$x]->post_title . '</a>';
-                                                echo '</div>';    
-                                            echo '</div>';   
-                                            $x++;
-                                        }                                                                                                                             
-                                    echo '</div>'; 
-                                }         
+                    if( isset($thumbnails) ) {
+                    
+                        $lists = array_chunk($thumbnails, 2);
+                        $x = 0;  
+                            foreach ($lists as $items) {
+                                echo '<div class="row row-margin">';                                                           
+                                    foreach ($items as $item) {                                                                                                              
+                                        echo '<div class="col-md-6">';
+                                            echo '<div class="homestyle-tile">';
+                                                echo $item;  
+                                                echo '<a href="' . $permalinks[$x] . '">' . $homestylesPosts[$x]->post_title . '</a>';
+                                            echo '</div>';    
+                                        echo '</div>';   
+                                        $x++;
+                                    }                                                                                                                             
+                                echo '</div>'; 
+                            }    
+                    } else {
+                        echo 'There are no projects available.';
+                    }       
                 ?>
 	</div><!-- .entry-content -->	
 </article><!-- #post-## -->

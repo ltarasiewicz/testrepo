@@ -8,6 +8,7 @@
 
 <div class="post-inner-content">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    <div class="top-section">
 	<header class="entry-header page-header">
             <div id="projectSliders">
                 <div class="row no-gutter">                              
@@ -65,5 +66,6 @@
 		?>
 	</div><!-- .entry-content -->
 	<?php edit_post_link( __( 'Edit', 'sparkling' ), '<footer class="entry-footer"><i class="fa fa-pencil-square-o"></i><span class="edit-link">', '</span></footer>' ); ?>
+    </div>    
 </article><!-- #post-## -->
 </div>

@@ -1,19 +1,17 @@
 // Slider functions
 jQuery(document).ready(function($){$(window).load(function(){
-        
-        
+             
     $('.rotating-leader').flexslider({
 
         animation: "slide",
         direction: "vertical",
-        animationLoop: true,
+        animationLoop: false,
         controlNav: false,
         directionNav: false,
         slideshowSpeed: 7000,
         animationSpeed: 1000,
         startAt: 0,
-        slideshow: true, 
-        
+        slideshow: true,         
         start: function(){
             var caption = $('.flexslider .flex-active-slide .flex-caption h2').text();  
             var link = $('.flexslider .flex-active-slide .flex-caption a').attr('href');
