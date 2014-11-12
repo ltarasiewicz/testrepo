@@ -84,11 +84,19 @@
                                     
                                     <div class="row no-gutter">                              
                                         <div class="col-sm-9">
-                                            <?php sparkling_featured_slider(); ?>
+                                            <?php 
+                                                if ( is_front_page() ) {
+                                                    sparkling_featured_slider(); 
+                                                }                                                                                      
+                                            ?>
                                             <?php //sparkling_call_for_action(); ?>
                                         </div>
-                                        <div class="col-sm-3">
-                                            <?php rotatingLeader_featured_slider(); ?>
+                                        <div class="col-sm-3">                                            
+                                            <?php 
+                                                if ( is_front_page() ) {
+                                                    rotatingLeader_featured_slider(); 
+                                                }                                            
+                                            ?>
                                         </div>                                
                                     </div>
                                     

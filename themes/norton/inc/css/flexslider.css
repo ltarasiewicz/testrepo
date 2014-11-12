@@ -77,12 +77,8 @@ html[xmlns] .slides {display: block;}
   background-color: #000;
 
 }
-.flexslider .slides img {
-  max-width: 100%;
-  display: block;
-  margin: auto 0;
-  height: auto;
-}
+
+
 .flex-control-nav {
   bottom: 10px;
   z-index: 1000;

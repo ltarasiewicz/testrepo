@@ -231,8 +231,13 @@ function sparkling_scripts() {
 	}         
 
   // Flexslider customization
-  if( ( is_home() || is_front_page() ) && of_get_option('sparkling_slider_checkbox') == 1 ) {
+  if( ( is_home() || is_front_page() ) && of_get_option('sparkling_slider_checkbox') == 1) {
     wp_enqueue_script( 'flexslider-customization', get_template_directory_uri() . '/inc/js/flexslider-custom.js', array('jquery', 'flexslider-js'), '20140716', true );
+  }
+  
+  // Enque script for initializing project page sliders
+  if ( is_single() && ! is_front_page() ) {
+      wp_enqueue_script( 'flexslider-customization', get_template_directory_uri() . '/inc/js/flexslider-project.js', array('jquery', 'flexslider-js'), '20141111', true );
   }
 
   // Main theme related functions

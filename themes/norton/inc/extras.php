@@ -252,7 +252,7 @@ function sparkling_featured_slider() {
 
         $query = new WP_Query( array( 'category__in' =>$slidecat,'posts_per_page' =>$count, 'post_type' => 'home-style' ) );
         
-    for($i=0; $i<5; $i++) {    
+    for($i=0; $i<15; $i++) {    
         if ($query->have_posts()) :
           while ($query->have_posts()) : $query->the_post();
           echo '<li>';
@@ -290,19 +290,22 @@ function rotatingLeader_featured_slider() {
         $slidecat =of_get_option( 'sparkling_slide_categories' );
 
         $query = new WP_Query( array( 'post_type' => 'home-style' ) );
-    for($i=0; $i<5; $i++) {      
+    for($i=0; $i<15; $i++) {      
         if ($query->have_posts()) :
           while ($query->have_posts()) : $query->the_post();
-          echo '<li>';
-         
-            if ( (function_exists( 'has_post_thumbnail' )) && ( has_post_thumbnail() ) ) :
-              echo get_the_post_thumbnail();
-            endif;            
-              endwhile;
-            endif;
-
-          echo '</li>';
-    }
+            
+              echo '<li>';
+                if ( (function_exists( 'has_post_thumbnail' )) && ( has_post_thumbnail() ) ) :
+                  echo '<div class="box">';  
+                    echo get_the_post_thumbnail();
+                    echo '<div class="overlay"></div>';
+                  echo '</div>';
+                endif;            
+                  endwhile;
+                endif;
+              echo '</li>';
+            
+    }       
       echo '</ul>';
 
           echo '<div class="rotating-leader-caption">';
@@ -315,6 +318,51 @@ function rotatingLeader_featured_slider() {
   }
 }
 endif;
+
+
+ /**
+ * Primary slider for a single project page
+ */
+function projectMainSlider() {
+    
+    $pictures = types_render_field("project-picture", array("output" => "raw", "width" => "600"));
+    $pictures = explode(' ', $pictures);  
+    $counter = count($pictures);
+    
+    echo '<div class="flexslider">';    
+      echo '<ul class="slides">';    
+        for($i=0; $i<$counter; $i++) {
+          echo '<li>';
+            echo '<img src="' . $pictures[$i] . '" />';
+          echo '</li>';         
+        }
+      echo '</ul>';
+    echo ' </div>';
+}
+
+ /**
+ * Secondary slider for a single project page
+ */
+function projectSecondarySlider() {
+    
+    $pictures = types_render_field("project-picture", array("output" => "raw", "width" => "600"));
+    $pictures = explode(' ', $pictures);  
+    $counter = count($pictures);
+    
+    echo '<div class="rotating-leader">';    
+      echo '<ul class="slides">';    
+        for($x=0; $x<10; $x++) {
+            for($i=0; $i<$counter; $i++) {
+              echo '<li>';
+                echo '<img src="' . $pictures[$i] . '" />';
+              echo '</li>';         
+            }
+        }    
+      echo '</ul>';
+    echo ' </div>';
+}
+
+
 
 /**
  * function to show the footer info, copyright information

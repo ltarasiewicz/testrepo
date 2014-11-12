@@ -2,21 +2,39 @@ jQuery(document).ready(function() {
     setTimeout(
     function() 
     {
-        fixFlexsliderHeight();
+        adjustLeaderHeight();
+
     }, 1000);
-    
+
 });
 
 jQuery(window).load(function() {
-    fixFlexsliderHeight();
+    adjustLeaderHeight();
+
 });
 
 jQuery(window).resize(function() {
-    fixFlexsliderHeight();
+    adjustLeaderHeight();
+
 });
 
-function fixFlexsliderHeight() {
+
+/*
+ * Function that adjusts the height of the rotating leader on the home page
+ */
+function adjustLeaderHeight() {
     var targetHeight = jQuery('.flexslider').css('height');
-    jQuery('.flex-viewport').attr('style', 'height:' + targetHeight + '!important;' + ' overflow: hidden; position: relative');
-    
+    targetHeight = parseInt(targetHeight, 10);
+    jQuery('.flex-viewport').attr('style', 'height:' + targetHeight + 'px' + ' !important;' + ' overflow: hidden; position: relative');   
+    jQuery('.rotating-leader img').attr('style', 'height: ' + targetHeight / 4 + 'px' + ' !important');
+}
+
+/*
+ * Function that adjusts the height of the secondary project slider on a singel project page
+ */
+function adjustSecondaryProjectSliderHeight() {
+    var targetHeight = jQuery('.single-project-slider').css('height');
+    targetHeight = parseInt(targetHeight, 10);
+    jQuery('.secondary-project-slider .flex-viewport').attr('style', 'height:' + targetHeight + 'px' + ' !important;' + ' overflow: hidden; position: relative');   
+    jQuery('.secondary-project-slider img').attr('style', 'height: ' + targetHeight / 4 + 'px' + ' !important');
 }

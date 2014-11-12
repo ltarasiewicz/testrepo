@@ -131,9 +131,11 @@ h6,
   font-size: 13px;
 }
 
+.secondary-project-slider img,
 .flexslider img {
   height: auto; /* Make sure images are scaled correctly. */
   max-width: 100%; /* Adhere to container width. */
+  width: 100%;
 }
 
 .rotating-leader img {
@@ -1554,4 +1556,67 @@ figure {
 
 #logo {
     margin-bottom: 15px;
+}
+
+
+
+/* Overlay for the slider */
+
+.flex-active-slide img {
+    height: auto;
+    max-width: 100%;
+}
+.flex-active-slide .box{
+    border:1px solid black;
+    position:relative;
+    display: inline-block;
+
+}
+.flex-active-slide .overlay{
+    position:absolute;
+    height: auto;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    background-color:rgba(0,0,0,0.5);
+}
+
+/* Styles for the process page */
+
+#stage-1-description,
+#stage-2-description,
+#stage-3-description,
+#stage-4-description,
+#stage-5-description,
+#stage-6-description{
+    height: 400px;
+    width: 400px;
+    background-image: url("http://lorempixel.com/400/400/sports/");
+}
+
+#stage-1-picture,
+#stage-3-picture,
+#stage-5-picture {
+    margin-top: 20px;
+}
+
+#stage-1-picture,
+#stage-2-picture,
+#stage-5-picture {
+    margin-bottom: 20px;
+}
+
+
+#stage-1-description h1,
+#stage-2-description h1,
+#stage-3-description h1,
+#stage-4-description h1,
+#stage-5-description h1,
+#stage-6-description h1 {
+    display: inline-block;
+    color: white;
+    background: red;
+    padding: 20px;
+    margin: 0 !important;
 }

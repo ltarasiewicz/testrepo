@@ -1,6 +1,7 @@
 // Slider functions
-jQuery(document).ready(function($){$(window).load(function(){        
-
+jQuery(document).ready(function($){$(window).load(function(){
+        
+        
     $('.rotating-leader').flexslider({
 
         animation: "slide",
@@ -12,7 +13,7 @@ jQuery(document).ready(function($){$(window).load(function(){
         animationSpeed: 1000,
         startAt: 0,
         slideshow: true, 
-        animationLoop: false,
+        
         start: function(){
             var caption = $('.flexslider .flex-active-slide .flex-caption h2').text();  
             var link = $('.flexslider .flex-active-slide .flex-caption a').attr('href');
@@ -26,15 +27,15 @@ jQuery(document).ready(function($){$(window).load(function(){
             $('.rotating-leader-caption a').attr('href', link);            
         }  
 
-    }); 
-    
+    });           
+           
     $('.flexslider').flexslider({
 
             animation: "fade",              //String: Select your animation type, "fade" or "slide"
 	    easing: "swing",                //{NEW} String: Determines the easing method used in jQuery transitions. jQuery easing plugin is supported!
 	    direction: "horizontal",        //String: Select the sliding direction, "horizontal" or "vertical"
 	    reverse: false,                 //{NEW} Boolean: Reverse the animation direction
-	    animationLoop: false,            //Boolean: Should the animation loop? If false, directionNav will received "disable" classes at either end
+	    animationLoop: true,            //Boolean: Should the animation loop? If false, directionNav will received "disable" classes at either end
 	    smoothHeight: false,            //{NEW} Boolean: Allow height of the slider to animate smoothly in horizontal mode
 	    startAt: 0,                     //Integer: The slide that the slider should start on. Array notation (0 = first slide)
 	    slideshow: true,                //Boolean: Animate slider automatically
@@ -51,8 +52,9 @@ jQuery(document).ready(function($){$(window).load(function(){
 	    useCSS: true,                   //{NEW} Boolean: Slider will use CSS3 transitions if available
 	    touch: true,                    //{NEW} Boolean: Allow touch swipe navigation of the slider on touch-enabled devices
             controlNav: false,
-            directionNav: true, 
+            directionNav: true,
             sync: ".rotating-leader"
+            
     });    
       
     

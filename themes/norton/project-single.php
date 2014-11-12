@@ -9,20 +9,19 @@
 <div class="post-inner-content">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header page-header">
-            <div id="sliders">
+            <div id="projectSliders">
                 <div class="row no-gutter">                              
-                    <div class="col-md-9">
-                        
-                    </div>
                     <div class="col-md-3">
-                        
+                        <?php projectSecondarySlider(); ?>
+                    </div>
+                    <div class="col-md-9">
+                        <?php projectMainSlider(); ?>
                     </div>                                
                 </div>
             </div> 
 	</header><!-- .entry-header -->
 
-	<div class="entry-content fixed-margin container">
-                       
+	<div class="entry-content fixed-margin container">    
                 <?php //the_content(); ?>
                 <?php 
                 $currentCategory = get_the_category();                

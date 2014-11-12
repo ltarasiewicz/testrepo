@@ -34,7 +34,7 @@
                 <?php //the_content(); ?>
                 <?php 
                 $currentCategory = get_the_category();
-                    $query = new WP_Query( array( 'post_type' => 'project', 'cat' => $currentCategory[0]->cat_ID) );
+                    $query = new WP_Query( array( 'post_type' => 'project', 'category__in' => $currentCategory[0]->cat_ID) );
                     if ($query->have_posts()) :
                         $thumbnails = [];
                         $i = 0;
