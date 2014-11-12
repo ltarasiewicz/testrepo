@@ -252,7 +252,7 @@ function sparkling_featured_slider() {
 
         $query = new WP_Query( array( 'category__in' =>$slidecat,'posts_per_page' =>$count, 'post_type' => 'home-style' ) );
         
-    for($i=0; $i<15; $i++) {    
+    for($i=0; $i<3; $i++) {    
         if ($query->have_posts()) :
           while ($query->have_posts()) : $query->the_post();
           echo '<li>';
@@ -351,7 +351,7 @@ function projectSecondarySlider() {
     
     echo '<div class="rotating-leader">';    
       echo '<ul class="slides">';    
-        for($x=0; $x<10; $x++) {
+        for($x=0; $x<3; $x++) {
             for($i=0; $i<$counter; $i++) {
               echo '<li>';
               echo '<div class="box">';  

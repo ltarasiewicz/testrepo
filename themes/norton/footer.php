@@ -30,8 +30,8 @@
                                         <div class="col-sm-9">
                                             <ul>
                                                 <li>Copyright &copy; Norton Builders <?php echo date('Y');  ?></li>
-                                                <li><img src="http://norton-wp.dev/wp-content/uploads/2014/11/homepage-21.jpg" /></li>
-                                                <li><img src="http://norton-wp.dev/wp-content/uploads/2014/11/homepage-23.jpg" /></li>                                                
+                                                <li><img src="<?php echo esc_url( home_url( '/' )) ?>wp-content/uploads/2014/11/homepage-21.jpg"/></li> 
+                                                <li><img src="<?php echo esc_url( home_url( '/' )) ?>wp-content/uploads/2014/11/homepage-23.jpg"/></li> 
                                             </ul>
                                             
                                         </div>
