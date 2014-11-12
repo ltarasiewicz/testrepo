@@ -144,7 +144,7 @@ html[xmlns] .slides {display: block;}
   position: absolute;
   left: 15px;
   right: 0;
-  bottom: calc(100% - 50px);
+  bottom: calc(100% - 70px);
   z-index: 1;
   display: inline-block;
   max-width: 100%;
@@ -164,4 +164,14 @@ html[xmlns] .slides {display: block;}
   margin-bottom: 0;
   color: #fff;
   width: 100%;
+}
+.project-link {
+    position: relative;
+    top: 50px;
+    font-family: Proxima Nova Bold;
+    color: #fff;
+}
+
+.project-link:hover {
+    color: #ec312c;
 }

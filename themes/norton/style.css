@@ -45,25 +45,29 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2014 Automatt
 @font-face {
     font-family: Proxima Nova Bold;
     src: url('inc/fonts/Proxima Nova Bold.otf');
+    font-weight: 700;
 }
 
 @font-face {
     font-family: Proxima Nova Semibold;
     src: url('inc/fonts/Proxima Nova Semibold.otf');
+    font-weight: 600;
 }
 
 @font-face {
     font-family: Proxima Nova Light;
     src: url('inc/fonts/Proxima Nova Light.otf');
+    font-weight: 300;
 }
 
 @font-face {
     font-family: Proxima Nova Regular;
     src: url('inc/fonts/Proxima Nova Regular.otf');
+    font-weight: 400;
 }
 
 strong {
-    font-weight: 600;
+    font-family: Proxima Nova Bold;
 }
 
 body {
@@ -1572,6 +1576,12 @@ figure {
     display: inline-block;
 
 }
+#stage-1 .overlay,
+#stage-2 .overlay,
+#stage-3 .overlay,
+#stage-4 .overlay,
+#stage-5 .overlay,
+#stage-6 .overlay,
 .flex-active-slide .overlay{
     position:absolute;
     height: auto;
@@ -1579,10 +1589,21 @@ figure {
     left:0px;
     bottom:0px;
     right:0px;
-    background-color:rgba(0,0,0,0.5);
+    background-color:rgba(0,0,0,0.8);
+    z-index: 0;
 }
 
 /* Styles for the process page */
+
+#stage-1-description h1,
+#stage-2-description h1,
+#stage-3-description h1,
+#stage-4-description h1,
+#stage-5-description h1,
+#stage-6-description h1 {
+    position: relative;
+    z-index: 1;
+}
 
 #stage-1-description,
 #stage-2-description,
@@ -1592,13 +1613,15 @@ figure {
 #stage-6-description{
     height: 400px;
     width: 400px;
-    background-image: url("http://lorempixel.com/400/400/sports/");
+    background-color: #000;
 }
 
 #stage-1-picture,
 #stage-3-picture,
 #stage-5-picture {
     margin-top: 20px;
+    position: relative;
+    z-index: 1;
 }
 
 #stage-1-picture,
@@ -1616,7 +1639,16 @@ figure {
 #stage-6-description h1 {
     display: inline-block;
     color: white;
-    background: red;
-    padding: 20px;
+    background: #ec312c;
+    padding: 30px;
     margin: 0 !important;
+}
+
+.stages-content-area {
+    padding: 0 75px;
+    position: relative;
+    z-index: 1;
+}
+.stages-content-area h3 {
+    margin-bottom: 100px;
 }

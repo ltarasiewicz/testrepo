@@ -21,7 +21,7 @@
             </div> 
 	</header><!-- .entry-header -->
 
-	<div class="entry-content fixed-margin container">    
+	<div class="entry-content">    
                 <?php //the_content(); ?>
                 <?php 
                 $currentCategory = get_the_category();                
@@ -42,16 +42,18 @@
                     $lists = array_chunk($thumbnails, 2);
                     $x = 0;  
                                 foreach ($lists as $items) {
-                                    echo '<div class="row row-margin">';                                                           
-                                        foreach ($items as $item) {                                                                                                              
-                                            echo '<div class="col-md-6">';
-                                                echo '<div class="homestyle-tile">';
-                                                    echo $item;  
-                                                    echo '<a href="' . $permalinks[$x] . '">' . $homestylesPosts[$x]->post_title . '</a>';
-                                                echo '</div>';    
-                                            echo '</div>';   
-                                            $x++;
-                                        }                                                                                                                             
+                                    echo '<div class="row row-margin">';  
+                                        echo '<div class="col-9-md col-md-offset-3">';
+                                            foreach ($items as $item) {                                                                                                              
+                                                echo '<div class="col-md-6">';
+                                                    echo '<div class="homestyle-tile">';
+                                                        echo $item;  
+                                                        echo '<a href="' . $permalinks[$x] . '">' . $homestylesPosts[$x]->post_title . '</a>';
+                                                    echo '</div>';    
+                                                echo '</div>';   
+                                                $x++;
+                                            }  
+                                        echo '</div>';    
                                     echo '</div>'; 
                                 }         
                 ?>

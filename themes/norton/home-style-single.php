@@ -64,13 +64,6 @@
                                     echo '</div>'; 
                                 }         
                 ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'sparkling' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
-	<?php edit_post_link( __( 'Edit', 'sparkling' ), '<footer class="entry-footer"><i class="fa fa-pencil-square-o"></i><span class="edit-link">', '</span></footer>' ); ?>
+	</div><!-- .entry-content -->	
 </article><!-- #post-## -->
 </div>

@@ -311,9 +311,9 @@ function rotatingLeader_featured_slider() {
           echo '<div class="rotating-leader-caption">';
             echo '<a href="'. get_permalink() .'">';
               echo '<h2 class="entry-title"></h2>';
-            echo '</a>';
-          echo '</div>';       
-      
+            echo '</a>';  
+             echo '<a class="project-link" href="'. get_permalink() .'">VIEW PROJECT</a>';
+          echo '</div>';               
     echo ' </div>';
   }
 }
