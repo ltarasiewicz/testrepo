@@ -175,3 +175,37 @@ html[xmlns] .slides {display: block;}
 .project-link:hover {
     color: #ec312c;
 }
+
+.project-caption {
+    z-index: 2;
+    color: #fff;
+    background-color:rgba(0,0,0,0.8);
+    margin: 0;
+    bottom: 0;
+    max-width: 300px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    
+}
+
+.project-caption h3 {
+    color: #fff;
+    z-index: 3;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;   
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eb312c;
+    font-size: 15px;
+    font-family: Proxima Nova Light;
+}
+
+.main-project-slider h1 {
+    margin: 70px 0 53px;
+}
+
+.main-heading {
+    font-size: 34px;
+}

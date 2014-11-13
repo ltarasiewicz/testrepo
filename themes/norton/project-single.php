@@ -6,6 +6,23 @@
  */
 ?>
 
+<?php
+/*
+ * Make first letter of the category name upper case;
+ */
+$postID = get_the_ID();
+$postCategory = get_the_category($postID);  
+$postCategoryArray = explode(' ', $postCategory[0]->name);
+
+if ( count($postCategoryArray) > 1 ) {
+    array_walk($postCategoryArray, function(&$item) {
+        $item = ucfirst($item);
+    });
+}
+$categoryName = implode(' ', $postCategoryArray);
+
+?>
+
 <div class="post-inner-content">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <div class="top-section">
@@ -15,15 +32,15 @@
                     <div class="col-md-3">
                         <?php projectSecondarySlider(); ?>
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-9 main-project-slider">
                         <?php projectMainSlider(); ?>
+                        <h1 class="main-heading">More <?php echo $categoryName;  ?> Projects</h1>
                     </div>                                
                 </div>
             </div> 
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">    
-                <?php //the_content(); ?>
                 <?php 
                 $currentCategory = get_the_category();                
                     $query = new WP_Query( array( 'post_type' => 'project', 'cat' => $currentCategory[0]->cat_ID) );
@@ -47,10 +64,14 @@
                                         echo '<div class="col-9-md col-md-offset-3">';
                                             foreach ($items as $item) {                                                                                                              
                                                 echo '<div class="col-md-6">';
-                                                    echo '<div class="homestyle-tile">';
-                                                        echo $item;  
-                                                        echo '<a href="' . $permalinks[$x] . '">' . $homestylesPosts[$x]->post_title . '</a>';
-                                                    echo '</div>';    
+                                                    echo '<div class="picture-tile-group">';
+                                                        echo '<div class="homestyle-tile">';
+                                                            echo '<a href="' . $permalinks[$x] . '">' 
+                                                                    . $item. $homestylesPosts[$x]->post_title . 
+                                                                    '<div class="picture-tiles-overlay"></div>' . 
+                                                                    '</a>';
+                                                        echo '</div>';
+                                                    echo '</div>';     
                                                 echo '</div>';   
                                                 $x++;
                                             }  
@@ -58,14 +79,7 @@
                                     echo '</div>'; 
                                 }         
                 ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'sparkling' ),
-				'after'  => '</div>',
-			) );
-		?>
 	</div><!-- .entry-content -->
-	<?php edit_post_link( __( 'Edit', 'sparkling' ), '<footer class="entry-footer"><i class="fa fa-pencil-square-o"></i><span class="edit-link">', '</span></footer>' ); ?>
-    </div>    
+    </div><!-- .top-section -->    
 </article><!-- #post-## -->
 </div>

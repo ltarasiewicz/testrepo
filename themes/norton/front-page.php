@@ -17,18 +17,13 @@ get_header(); ?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 						<div class="entry-content">
 							<?php the_content(); ?>
-							<?php
-								wp_link_pages( array(
-									'before' => '<div class="page-links">' . __( 'Pages:', 'sparkling' ),
-									'after'  => '</div>',
-								) );
-							?>
+                                                    <!-- wp_link_pages() has been removed -->
 						</div><!-- .entry-content -->
-						<?php edit_post_link( __( 'Edit', 'sparkling' ), '<footer class="entry-meta"><i class="fa fa-pencil-square-o"></i><span class="edit-link">', '</span></footer>' ); ?>
+                                                <!-- edit_post_link() has been removed -->
 					</article><!-- #post-## -->
 
-					<?php get_sidebar( 'home' ); ?>
 
+                                                <!-- get_sidebar('home') has been removed -->
 
 						<!-- Comments have been removed  -->
 

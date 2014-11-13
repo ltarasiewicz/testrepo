@@ -100,9 +100,8 @@ a:focus {
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  color: #DA4453;
-  font-weight: 700;
-  font-family: 'Roboto Slab', serif;
+  color: #fff;
+  font-family: Proxima Nova Semibold;
 }
 
 h1,
@@ -311,6 +310,7 @@ textarea {
   margin-top: 26px;
   margin-bottom: 40px;
 }
+
 /* =Post styling
 ----------------------------------------------- */
 .entry-meta a {
@@ -416,7 +416,7 @@ hr.section-divider {
 }
 @media(max-width:767px){
     .post-inner-content {
-        padding: 20px 25px;
+        padding: 20px 20px;
     }
 }
 /* =Singe Post/Page Pagination
@@ -1425,6 +1425,14 @@ button[type=submit],
 
 /* Added styles */
 
+.footer-widget-area .menu-footer-menu-container {
+    text-transform: uppercase;
+}
+
+.fixed-margin {
+    margin: 0 auto !important;
+}
+
 .top-section {
     margin: 0 -15px;
 }
@@ -1576,12 +1584,9 @@ figure {
     display: inline-block;
 
 }
-#stage-1 .overlay,
-#stage-2 .overlay,
-#stage-3 .overlay,
-#stage-4 .overlay,
-#stage-5 .overlay,
-#stage-6 .overlay,
+
+
+.stage .overlay,
 .flex-active-slide .overlay{
     position:absolute;
     height: auto;
@@ -1595,28 +1600,16 @@ figure {
 
 /* Styles for the process page */
 
-#stage-1-description h1,
-#stage-2-description h1,
-#stage-3-description h1,
-#stage-4-description h1,
-#stage-5-description h1,
-#stage-6-description h1 {
-    position: relative;
-    z-index: 1;
-}
-
-#stage-1-description,
-#stage-2-description,
-#stage-3-description,
-#stage-4-description,
-#stage-5-description,
-#stage-6-description{
-    height: 400px;
-    width: 400px;
+.stage-description {
+    min-height: 400px;
+    width: 100%;
     background-color: #000;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #stage-1-picture,
+#stage-2-picture,
 #stage-3-picture,
 #stage-5-picture {
     margin-top: 20px;
@@ -1629,19 +1622,25 @@ figure {
 #stage-5-picture {
     margin-bottom: 20px;
 }
+#stage-1-picture img,
+#stage-2-picture img,
+#stage-3-picture img,
+#stage-5-picture img {
+    width: 100%;
+    height: auto;
+}
 
 
-#stage-1-description h1,
-#stage-2-description h1,
-#stage-3-description h1,
-#stage-4-description h1,
-#stage-5-description h1,
-#stage-6-description h1 {
+
+
+.stage-description h2 {
     display: inline-block;
     color: white;
     background: #ec312c;
     padding: 30px;
     margin: 0 !important;
+    position: relative;
+    z-index: 1;    
 }
 
 .stages-content-area {
@@ -1651,4 +1650,23 @@ figure {
 }
 .stages-content-area h3 {
     margin-bottom: 100px;
+}
+
+/* Apply overlay to auto-generated picture tiles on hover */
+
+.picture-tiles-overlay {
+
+    position:absolute;
+    height: auto;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    background-color:rgba(0,0,0,0.8);
+    z-index: 0;  
+    display: none;
+}
+
+.picture-tile-group:hover .picture-tiles-overlay {
+    display: block;
 }

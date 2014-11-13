@@ -77,10 +77,6 @@
     height: auto;
 }
 
-.panel-row-style-myPages #gallery-2, #gallery-3 img{
-    //float: right;
-}
-
 .panel-row-style-myPages {
     width: 1280px;
     margin: 0 auto;
@@ -99,7 +95,7 @@
     font-weight: 600 !important;
 }
 
-.panel-row-style-myTestimonials .widget_text .textwidget:before,
+/*.panel-row-style-myTestimonials .widget_text .textwidget:before,
 .panel-row-style-myTestimonials .widget_text .textwidget:after {
     content: '\"';    
     font-size: 94px;
@@ -108,7 +104,7 @@
     line-height: 20px;
     top: 20px;
   
-}
+}*/
 
 .panel-row-style-myTestimonials .widget_black-studio-tinymce > h3{
     display: inline-block;
@@ -213,14 +209,9 @@
 /* Bootstrap refactor */
 
 .homestyle-tile img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 
-}
-
-.fixed-margin {
-    margin: 0 auto !important;
-    width: 1280px;
 }
 
 .homestyle-tile a {
@@ -251,7 +242,7 @@
     margin-bottom: 90px;
 }
 
-.marginalized h3 {
+.marginalized h1 {
     font-family: Proxima Nova Semibold !important;
     font-size: 34px;
     color: #fff;

@@ -11,20 +11,7 @@ jQuery(document).ready(function($){$(window).load(function(){
         slideshowSpeed: 7000,
         animationSpeed: 1000,
         startAt: 0,
-        slideshow: true,         
-        start: function(){
-            var caption = $('.flexslider .flex-active-slide .flex-caption h2').text();  
-            var link = $('.flexslider .flex-active-slide .flex-caption a').attr('href');
-            $('.rotating-leader-caption h2').text(caption);
-            $('.rotating-leader-caption a').attr('href', link);
-        },
-        after: function(){
-            var caption = $('.flexslider .flex-active-slide .flex-caption h2').text();  
-            var link = $('.flexslider .flex-active-slide .flex-caption a').attr('href');
-            $('.rotating-leader-caption h2').text(caption);
-            $('.rotating-leader-caption a').attr('href', link);            
-        }  
-
+        slideshow: true
     });           
            
     $('.flexslider').flexslider({

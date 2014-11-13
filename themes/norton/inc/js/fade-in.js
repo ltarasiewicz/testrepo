@@ -6,10 +6,19 @@ jQuery(document).ready(function($) {
         });        
     }
     
-    $('#stage-1, #stage-2, #stage-3, #stage-4, #stage-5, #stage-6').hide();
-    $('#stage-1, #stage-2, #stage-3, #stage-4, #stage-5, #stage-6').each(function(i) {
-                $(this).delay(i * 500).fadeIn(5000);         
-        });  
+    if ( $('.stage') ) {
+        $('.stage').hide();
+        $('.stage').each(function(i) {
+                    $(this).delay(i * 500).fadeIn(5000);         
+            });  
+    }
+    
+    if ( $('.picture-tile-group') ) {
+        $('.picture-tile-group').hide();
+        $('.picture-tile-group').each(function(i) {
+                    $(this).delay(i * 500).fadeIn(5000);         
+            });  
+    }    
 });
 
 

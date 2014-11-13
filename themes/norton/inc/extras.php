@@ -303,8 +303,7 @@ function rotatingLeader_featured_slider() {
                 endif;            
                   endwhile;
                 endif;
-              echo '</li>';
-            
+              echo '</li>';            
     }       
       echo '</ul>';
 
@@ -333,11 +332,14 @@ function projectMainSlider() {
       echo '<ul class="slides">';    
         for($i=0; $i<$counter; $i++) {
           echo '<li>';
-            echo '<img src="' . $pictures[$i] . '" />';
-          echo '</li>';         
-        }
-      echo '</ul>';
-    echo ' </div>';
+            echo '<img src="' . $pictures[$i] . '" />';            
+          echo '</li>';    
+        }               
+      echo '</ul>';    
+               echo '<div class="flex-caption project-caption">';
+                    echo '<h3>' . types_render_field( 'project-slider-caption', array( ) ) .  '</h3>';
+              echo '</div>';
+    echo ' </div>';    
 }
 
  /**
