@@ -895,7 +895,7 @@ button:hover {
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
   border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
-@media (min-width: 767px) {
+@media (min-width: 1250px) {
   ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
   }
@@ -935,7 +935,7 @@ button:hover {
 .nav.navbar-nav {
   float: right;
 }
-@media (max-width: 767px) {
+@media (max-width: 1250px) {
   .nav.navbar-nav {
     float: none;
   }

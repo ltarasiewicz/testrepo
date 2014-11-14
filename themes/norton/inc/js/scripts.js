@@ -5,6 +5,10 @@ jQuery(document).ready(function() {
         adjustLeaderHeight();
 
     }, 1000);
+    
+    window.onresize = function(e) {
+        adjustLeaderHeight();
+    };    
 
 });
 
@@ -19,6 +23,8 @@ jQuery(window).resize(function() {
 });
 
 
+
+
 /*
  * Function that adjusts the height of the rotating leader on the home page
  */
@@ -27,14 +33,4 @@ function adjustLeaderHeight() {
     targetHeight = parseInt(targetHeight, 10);
     jQuery('.flex-viewport').attr('style', 'height:' + targetHeight + 'px' + ' !important;' + ' overflow: hidden; position: relative');   
     jQuery('.rotating-leader img').attr('style', 'height: ' + targetHeight / 4 + 'px' + ' !important');
-}
-
-/*
- * Function that adjusts the height of the secondary project slider on a singel project page
- */
-function adjustSecondaryProjectSliderHeight() {
-    var targetHeight = jQuery('.single-project-slider').css('height');
-    targetHeight = parseInt(targetHeight, 10);
-    jQuery('.secondary-project-slider .flex-viewport').attr('style', 'height:' + targetHeight + 'px' + ' !important;' + ' overflow: hidden; position: relative');   
-    jQuery('.secondary-project-slider img').attr('style', 'height: ' + targetHeight / 4 + 'px' + ' !important');
 }

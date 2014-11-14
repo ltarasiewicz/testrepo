@@ -193,7 +193,9 @@
         margin-bottom: 0;
     }   
     
-
+    .panel-row-style-myPages .panel-grid-cell {
+        margin-bottom: 0 !important;
+    }
     
     .panel-row-style-homePage .textwidget {      
         margin-top: 30px;
@@ -231,7 +233,7 @@
     .marginalized > h1 {
         font-size: 22px;
     }    
-    
+   
     /* Reduce padding on the process page  */
     .reduced-padding {
         padding: 0;
@@ -246,6 +248,25 @@
         font-size: 22px !important;
     }
     
+    #colophon {
+        padding: 0 15px !important;
+    }
     
+    #colophon li {
+        margin-right: 0 !important; 
+    }    
+    
+    #logo img {
+        max-width: 130px !important;
+    }
+    
+    .main-project-slider {
+        display: none;
+    }
+    
+    .main-project-slider h1 {
+        font-size: 22px;
+        margin-left: 25px !important;
+    }
     
 }

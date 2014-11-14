@@ -200,7 +200,7 @@ function sparkling_scripts() {
   // Style for contact form (Contact Form 7)
   wp_enqueue_style( 'contact-form', get_template_directory_uri().'/inc/css/contact-form.css' );  
   
-  // Style for contact form (Contact Form 7)
+  // Custom media queries
   wp_enqueue_style( 'media-queries', get_template_directory_uri().'/inc/css/media-queries.css' );    
   
   // Add Google Fonts
@@ -208,9 +208,6 @@ function sparkling_scripts() {
 
   wp_enqueue_style( 'sparkling-fonts' );
   
-  // Styles for making Bootstrap columns same height
-  wp_enqueue_style( 'same-height-columns', get_template_directory_uri().'/inc/css/same-height-columns.css' );    
-
   // Add slider CSS only if is front page ans slider is enabled or it is a single post
   if( (( is_home() || is_front_page() ) && of_get_option('sparkling_slider_checkbox') == 1) || is_single() ) {
 		wp_enqueue_style( 'flexslider-css', get_template_directory_uri().'/inc/css/flexslider.css' );
