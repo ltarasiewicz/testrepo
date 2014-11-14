@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1260px) {
+/*@media only screen and (max-width: 1260px) {
     .navbar-header {
         float: none;
     }
@@ -35,7 +35,7 @@
 	}
               
         
-}
+}*/
 
 @media (min-width: 1200px) {
     .fixed-margin {
@@ -82,6 +82,62 @@
     .panel-row-style {
         width: auto !important;
     }
+    
+    .panel-row-style-homePage .textwidget {      
+        margin-top: 36px;
+        padding-top : 50px;     
+    }    
+    
+    .panel-row-style-homePage .textwidget p {
+        margin-left: 31px;
+        font-size: 27px;
+        
+    }   
+    
+    .rotating-leader {
+        display: block;
+    } 
+    
+    .panel-row-style-myPages .widget_black-studio-tinymce .textwidget {
+        font-family: Proxima Nova Light;
+        font-size: 25px;   
+    }
+    
+    .panel-row-style-myPages .widget_black-studio-tinymce .textwidget p {    
+        padding-bottom: 40px;
+        margin-bottom: 15px;
+    }    
+    
+    .panel-row-style-myPages h3 {
+        font-size: 23px;
+    }    
+    
+    .panel-row-style-myPages .widget_text .textwidget {
+        font-size: 16px;   
+        margin-bottom: 0;
+    }
+    
+    .intro-block {
+        padding-bottom: 25px;
+        margin-bottom: 50px;
+    }    
+    
+    .intro-block p {
+        font-size: 25px;
+        line-height: 43px;
+    }    
+    
+    .marginalized {
+        margin-bottom: 35px;
+    }
+    
+    .marginalized > h1 {
+        font-size: 23px;
+    }    
+    
+    
+    
+    
 }
 
 @media (max-width: 767px) {
@@ -115,11 +171,7 @@
     .panel-row-style {
         width: auto !important;
     }    
-    
-    .footer-widget-area {
-       // padding: 20px 15px !important;
-    }
-    
+      
     .panel-row-style-myPages .widget_siteorigin-panels-gallery:not(#panel-18-2-0-0) {
         float: left;
         width: 50%;
@@ -138,14 +190,62 @@
     .panel-row-style-myPages .widget_text .textwidget {
         font-size: 11px;
         line-height: 21px;
+        margin-bottom: 0;
     }   
+    
+
+    
+    .panel-row-style-homePage .textwidget {      
+        margin-top: 30px;
+        padding-top : 30px;     
+    }
+    
+    .panel-row-style-myPages .widget_black-studio-tinymce .textwidget {
+        font-family: Proxima Nova Light;
+        font-size: 20px;   
+    }    
+    
+    .panel-row-style-myPages .widget_black-studio-tinymce .textwidget p {    
+        padding-bottom: 30px;
+        margin-bottom: 15px;
+    }        
+    
+    .panel-row-style-myPages h3 {
+        font-size: 25px;
+    }
+         
+    .intro-block {
+        padding-bottom: 40px;
+        margin-bottom: 35px;
+    }
     
     .intro-block p {
         font-size: 19px;
         line-height: 32px;
     }
     
-    .post-inner-content {
-        
+    .marginalized {
+        margin-bottom: 35px;
     }
+    
+    .marginalized > h1 {
+        font-size: 22px;
+    }    
+    
+    /* Reduce padding on the process page  */
+    .reduced-padding {
+        padding: 0;
+    }
+    
+    .panel-row-style-myTestimonials .widget_black-studio-tinymce > h3  {
+        width: 100%
+    }  
+    
+    .panel-row-style-myContact .widget-title,   
+    .panel-row-style-myAwards .widget-title {
+        font-size: 22px !important;
+    }
+    
+    
+    
 }

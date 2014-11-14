@@ -29,10 +29,10 @@ $categoryName = implode(' ', $postCategoryArray);
 	<header class="entry-header page-header">
             <div id="projectSliders">
                 <div class="row no-gutter">                              
-                    <div class="col-md-3">
+                    <div class="col-sm-3">
                         <?php projectSecondarySlider(); ?>
                     </div>
-                    <div class="col-md-9 main-project-slider">
+                    <div class="col-sm-9 main-project-slider">
                         <?php projectMainSlider(); ?>
                         <h1 class="main-heading">More <?php echo $categoryName;  ?> Projects</h1>
                     </div>                                

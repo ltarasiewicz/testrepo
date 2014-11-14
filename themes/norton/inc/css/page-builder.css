@@ -5,7 +5,7 @@
 }
 
 .panel-row-style-homePage .textwidget {
-    margin-top: 165px;
+    margin-top: 155px;
     border-top: 1px solid #ec312c;
     width: 85%;
     padding-top: 50px;
@@ -51,19 +51,17 @@
 .panel-row-style-myPages h3 {
     font-family: Proxima Nova Semibold !important;
     font-size: 34px;
-    color: #fff;
-    font-weight: 600 !important;  
 }
 
 .panel-row-style-myPages .widget_black-studio-tinymce .textwidget {
     font-family: Proxima Nova Light;
-    font-size: 36px;
-    
+    font-size: 36px;   
 }
+
 .panel-row-style-myPages .widget_black-studio-tinymce .textwidget p {    
     border-bottom: 1px solid #ec312c;  
-    padding-bottom: 105px;
-    margin-bottom: 96px;
+    padding-bottom: 85px;
+    margin-bottom: 80px;
 }
 
 .panel-row-style-myPages .widget_text .textwidget {
@@ -92,7 +90,6 @@
 .panel-row-style-myTestimonials .widget_text .widget-title {
     font-family: Proxima Nova Semibold;
     font-size: 34px;
-    font-weight: 600 !important;
 }
 
 /*.panel-row-style-myTestimonials .widget_text .textwidget:before,
@@ -230,8 +227,8 @@
 
 .intro-block {
     border-bottom: 1px solid #ec312c;  
-    padding-bottom: 105px;
-    margin-bottom: 96px;    
+    padding-bottom: 80px;
+    margin-bottom: 85px;    
 }
 
 .intro-block p {
@@ -240,7 +237,7 @@
 }
 
 .marginalized {
-    margin-bottom: 90px;
+    margin-bottom: 55px;
 }
 
 .marginalized h1 {

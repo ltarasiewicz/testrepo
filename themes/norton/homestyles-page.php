@@ -8,7 +8,7 @@
 
 <div class="post-inner-content">
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>		
-        <div class="entry-content fixed-margin container">
+        <div class="entry-content fixed-margin container reduced-padding">
             <header class="entry-header page-header">
                 <div class="row">                
                     <div class="col-md-offset-4 col-md-8">
@@ -57,5 +57,6 @@
                         }        
                 ?>
         </div><!-- .entry-content -->	
+    </div> <!-- .top-section -->
     </article><!-- #post-## -->
 </div>
