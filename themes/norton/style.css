@@ -1670,3 +1670,21 @@ figure {
 .picture-tile-group {
     margin-bottom: 25px;
 }
+
+/* Single project tile removal of links on mobile */
+
+.mobile-heading {
+    position: absolute; 
+    height: 50px; 
+    width: 200px; 
+    left: 0; 
+    right: 0; 
+    top: 40%; 
+    margin: 0 auto;  
+    text-align: center;
+    display: none;
+}
+
+.single-project-row {
+    margin: 0;
+}

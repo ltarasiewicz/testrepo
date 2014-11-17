@@ -44,10 +44,12 @@
                                     echo '<div class="col-md-4">';
                                         echo '<div class="picture-tile-group">';
                                             echo '<div class="homestyle-tile">';
+                                                echo $item;
                                                 echo '<a href="' . $permalinks[$x] . '">' 
-                                                        . $item. $homestylesPosts[$x]->post_title . 
+                                                        . $homestylesPosts[$x]->post_title . 
                                                         '<div class="picture-tiles-overlay"></div>' . 
                                                         '</a>';
+                                                echo '';
                                             echo '</div>';
                                         echo '</div>';      
                                     echo '</div>';   

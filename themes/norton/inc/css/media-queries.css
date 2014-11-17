@@ -269,4 +269,11 @@
         margin-left: 25px !important;
     }
     
+    .mobile-heading {
+        display: block !important;
+    }
+    
+    .mobile-project-link {
+        display: none !important;
+    }
 }

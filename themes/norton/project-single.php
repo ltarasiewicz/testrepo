@@ -60,14 +60,18 @@ $categoryName = implode(' ', $postCategoryArray);
                     $lists = array_chunk($thumbnails, 2);
                     $x = 0;  
                                 foreach ($lists as $items) {
-                                    echo '<div class="row row-margin">';  
+                                    echo '<div class="row row-margin single-project-row">';  
                                         echo '<div class="col-9-md col-md-offset-3">';
                                             foreach ($items as $item) {                                                                                                              
                                                 echo '<div class="col-md-6">';
                                                     echo '<div class="picture-tile-group">';
                                                         echo '<div class="homestyle-tile">';
-                                                            echo '<a href="' . $permalinks[$x] . '">' 
-                                                                    . $item. $homestylesPosts[$x]->post_title . 
+                                                            echo $item;
+                                                            echo '<h2 class="mobile-heading">';
+                                                                echo $homestylesPosts[$x]->post_title;
+                                                            echo '</h2>';                                                        
+                                                            echo '<a class="mobile-project-link" href="' . $permalinks[$x] . '">' 
+                                                                    . $homestylesPosts[$x]->post_title . 
                                                                     '<div class="picture-tiles-overlay"></div>' . 
                                                                     '</a>';
                                                         echo '</div>';
