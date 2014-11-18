@@ -23,7 +23,7 @@
                 </header><!-- .entry-header -->    
 
                 <?php 
-                $currentCategory = get_the_category();
+                $currentCategory = get_the_category();            
                     $query = new WP_Query( array( 'post_type' => 'project', 'category__in' => $currentCategory[0]->cat_ID) );
                     if ($query->have_posts()) :
                         $thumbnails = [];
@@ -48,7 +48,7 @@
                                             echo '<div class="picture-tile-group">';
                                                 echo '<div class="homestyle-tile">';
                                                     echo '<a href="' . $permalinks[$x] . '">' 
-                                                            . $item. $homestylesPosts[$x]->post_title . 
+                                                            . $item . $homestylesPosts[$x]->post_title . 
                                                             '<div class="picture-tiles-overlay"></div>' . 
                                                             '</a>';
                                                 echo '</div>';

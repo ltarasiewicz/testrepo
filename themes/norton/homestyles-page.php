@@ -49,7 +49,6 @@
                                                         . $homestylesPosts[$x]->post_title . 
                                                         '<div class="picture-tiles-overlay"></div>' . 
                                                         '</a>';
-                                                echo '';
                                             echo '</div>';
                                         echo '</div>';      
                                     echo '</div>';   

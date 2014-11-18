@@ -1,25 +1,18 @@
 jQuery(document).ready(function($) { 
-    if ( $('.homestyle-tile') ) {
-        $('.homestyle-tile').hide();
-        $('.homestyle-tile').each(function(i) {
-                $(this).delay(i * 500).fadeIn(5000);         
-        });        
-    }
     
-    if ( $('.stage') ) {
-        $('.stage').hide();
-        $('.stage').each(function(i) {
-                    $(this).delay(i * 500).fadeIn(5000);         
-            });  
-    }
+    animatePictures('.homestyle-tile, .stage, .picture-tile-group, \n\
+    .panel-row-style-homePage #gallery-1, .panel-row-style-myPages img, \n\
+    .panel-row-style-myAwards img');  
     
-    if ( $('.picture-tile-group') ) {
-        $('.picture-tile-group').hide();
-        $('.picture-tile-group').each(function(i) {
-                    $(this).delay(i * 500).fadeIn(5000);         
-            });  
-    }    
+    
 });
+
+function animatePictures(selection) {
+    elementsToAnimate = jQuery(selection);
+    elementsToAnimate.hide().each(function(i) {
+       jQuery(this).delay(i * 500).fadeIn(5000);
+    });
+}
 
 
 

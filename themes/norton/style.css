@@ -89,7 +89,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #DADADA;
+  color: #EC312C;
   text-decoration: none;
 }
 
@@ -870,7 +870,9 @@ button:hover {
   background-color: transparent;
 }
 
-
+#menu-footer-menu > li > a:hover {
+    color: #656565 !important;
+}
 
 
 .dropdown-menu > li > a:hover,
