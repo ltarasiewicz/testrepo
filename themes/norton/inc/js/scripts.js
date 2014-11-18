@@ -1,28 +1,25 @@
-jQuery(document).ready(function() {
-    setTimeout(
-    function() 
-    {
-        adjustLeaderHeight();
-
-    }, 1000);
-    
+jQuery(document).ready(function() {  
     window.onresize = function(e) {
         adjustLeaderHeight();
     };    
 
+
+
+    jQuery(window).load(function() {
+        adjustLeaderHeight();
+        var selector = jQuery('.rotating-leader img');
+        selector.hide().each(function(i) {
+        jQuery(this).delay(i * 500).fadeIn(5000);
+    });
+
+    });
+
+    jQuery(window).resize(function() {
+        adjustLeaderHeight();
+
+    });
+
 });
-
-jQuery(window).load(function() {
-    adjustLeaderHeight();
-
-});
-
-jQuery(window).resize(function() {
-    adjustLeaderHeight();
-
-});
-
-
 
 
 /*
