@@ -1580,7 +1580,7 @@ figure {
     border:1px solid black;
     position:relative;
     display: inline-block;
-
+    width: 100%;
 }
 
 
