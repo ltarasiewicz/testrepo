@@ -79,7 +79,7 @@ body {
 }
 
 a {
-  color: #DA4453;
+  color: #fff;
   text-decoration: none;
   -webkit-transition: all 0.3s;
      -moz-transition: all 0.3s;
@@ -879,8 +879,8 @@ button:hover {
 .dropdown-menu > li > a:focus,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-  color: #fff;
-  background-color: #DA4453;
+  color: #3f3f3f;
+  background-color: transparent;
 }
 
 .dropdown-menu {
@@ -904,7 +904,9 @@ button:hover {
 }
 .dropdown-menu > li > a {
   padding: 10px 15px;
-  color: #636467;
+  color: #fff;
+  text-transform: uppercase;
+
 }
 .dropdown-menu,
 .dropdown-menu > .active > a,
@@ -1180,7 +1182,7 @@ p.logged-in-as {
   color: #DADADA;
 }
 #footer-area .footer-widget-area {
-  padding: 20px 0;
+  padding: 63px 0 20px 0;
   overflow: hidden;
 }
 #footer-area ul li {
@@ -1478,7 +1480,7 @@ button[type=submit],
 }
 
 #menu-homepage-menu {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .navbar-brand {
@@ -1635,10 +1637,12 @@ figure {
     display: inline-block;
     color: white;
     background: #ec312c;
-    padding: 30px;
+    padding: 20px 30px;
     margin: 0 !important;
     position: relative;
-    z-index: 1;    
+    z-index: 1;
+    font-family: Proxima Nova Regular;
+    font-size: 30px;
 }
 
 .stages-content-area {
@@ -1653,20 +1657,21 @@ figure {
 /* Apply overlay to auto-generated picture tiles on hover */
 
 .picture-tiles-overlay {
-
     position:absolute;
     height: auto;
     top:0px;
     left:0px;
     bottom:0px;
     right:0px;
-    background-color:rgba(0,0,0,0.8);
-    z-index: 0;  
-    display: none;
+    transition: 0.35s background-color;
+    background-color:transparent;
+    z-index: 0;      
 }
 
 .picture-tile-group:hover .picture-tiles-overlay {
+    
     display: block;
+    background-color:rgba(0,0,0,0.8);
 }
 
 .picture-tile-group {
@@ -1689,4 +1694,20 @@ figure {
 
 .single-project-row {
     margin: 0;
+}
+
+/* Process page */
+
+.small-number {
+    font-size: 16px;
+    z-index: 10;
+    color: #fff;
+    position: relative;
+    margin-left: 18%;
+    font-family: Proxima Nova Regular;
+}
+
+/* Project slider - adjust width of columns*/
+.project-single {
+    //margin-left: -80px;
 }

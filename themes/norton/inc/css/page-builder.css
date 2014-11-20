@@ -80,6 +80,19 @@
     margin: 0 auto;
 }
 
+/* About Us bottom text widget */
+
+.panel-row-style-myAboutUs {
+    width: 1280px;
+    margin: 0 auto; 
+    
+}
+
+.panel-row-style-myAboutUs .widget_text .textwidget {    
+    font-size: 18px;
+    line-height: 35px;    
+}
+
 /* Testimonials Page Builder rows */
 
 .panel-row-style-myTestimonials {
@@ -113,11 +126,12 @@
     padding-left: 30px;
     font-family: Proxima Nova Regular;
     font-size: 18px;
+    text-transform: uppercase;
 }
 
 .panel-row-style-myTestimonials .widget_black-studio-tinymce .textwidget p {
     font-family: Proxima Nova Light;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .panel-row-style-myTestimonials h3 {
@@ -181,13 +195,20 @@
     font-size: 36px;
 }
 
-.panel-row-style-myContact .panel-grid-cell:nth-of-type(3) .widget_text > h3,
+.panel-row-style-myContact .panel-grid-cell:nth-of-type(3) .widget_text  h3,
 .panel-row-style-myContact .panel-grid-cell:nth-of-type(1) .widget_text:nth-child(2) > h3{
     color: #fff;
     font-family: Proxima Nova Light;
-    font-size: 28px;
-    font-weight: 300;
-    
+    font-size: 28px;    
+    text-transform: uppercase;
+}
+
+.panel-row-style-myContact .panel-grid-cell:nth-of-type(3) .widget_text  .textwidget > h3 {
+    font-size: 25px;
+}
+
+.panel-row-style-myContact .panel-grid-cell:nth-of-type(3) .widget_text {
+    margin-bottom: 70px ;
 }
 
 
@@ -198,8 +219,9 @@
 }
 
 .panel-row-style-myContact .panel-grid-cell:nth-of-type(3) .widget_text > h3{
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #e7302b;
+    margin-bottom: 45px;
 }
 
 /* Homestyles Page Builder rows (homestyles-page.php) */
@@ -215,10 +237,36 @@
 .homestyle-tile a {
     display: inline-block;
     width: 100%;
-    line-height: 55px;
     background-color: #ec312c;
     color: #fff;
-    text-align: center;    
+    text-align: left;  
+    line-height: 60px
+}
+
+.homestyle-tile a > h4,
+.homestyle-tile a > h5 {
+    font-size: 25px;    
+    font-family: Proxima Nova Semibold;
+    margin: 0 45px 0;
+}
+
+.homestyle-tile a > h4 {
+    text-transform: uppercase;
+    margin-top: 20px;
+    line-height: 40px;
+}
+
+.homestyle-tile a > h5 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.homestyle-tile a > h6 {
+    font-size: 16px;
+    font-family: Proxima Nova Bold;
+    margin-left: 45px;
+    text-transform: uppercase;
+    line-height: 35px;
 }
 
 .row-margin {
@@ -282,4 +330,38 @@
 .panel-row-style-myHomestyleProjects .panel-grid-cell {
     width: 50%; 
     float: left;
+}
+
+/* Contact form */
+
+.wpcf7-form input[type="text"], textarea {   
+    padding: 10px !important;
+    color: #000;   
+}
+
+.wpcf7-form input[type="submit"] {
+    line-height: 65px;
+    font-family: Proxima Nova Regular;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.wpcf7-form p {
+    margin-bottom: 25px;
+}
+
+::-webkit-input-placeholder {
+   color: #000;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #000; 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #000;  
+}
+
+:-ms-input-placeholder {  
+   color: #000;
 }

@@ -11,7 +11,7 @@ jQuery(document).ready(function($){$(window).load(function(){
         slideshowSpeed: 7000,
         animationSpeed: 2000,
         startAt: 0,
-        slideshow: true
+        slideshow: false
     });           
            
     $('.flexslider').flexslider({

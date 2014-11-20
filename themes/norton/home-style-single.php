@@ -31,13 +31,15 @@
                         while ($query->have_posts()) : $query->the_post();
                             if ( (function_exists( 'has_post_thumbnail' )) && ( has_post_thumbnail() ) ) :
                               $thumbnails[$i] = get_the_post_thumbnail($post->ID, 'full-size');
+                            
                             endif;
                             $permalinks[$i] = get_permalink();
                             $homestylesPosts[$i] = get_post();
-                            $i++;                         
+                            $i++;      
+                            
                         endwhile;                        
                     endif;    
-
+                    
                     if( isset($thumbnails) ) {
                         $lists = array_chunk($thumbnails, 2);
                         $x = 0;  
@@ -48,7 +50,10 @@
                                             echo '<div class="picture-tile-group">';
                                                 echo '<div class="homestyle-tile">';
                                                     echo '<a href="' . $permalinks[$x] . '">' 
-                                                            . $item . $homestylesPosts[$x]->post_title . 
+                                                            . $item . 
+                                                            '<h4>' . $homestylesPosts[$x]->post_title . '</h4>' . 
+                                                             
+                                                            '<h5>' . types_render_field( 'project-slider-caption', array('id' => $post->ID) ) . '</h5>' . 
                                                             '<div class="picture-tiles-overlay"></div>' . 
                                                             '</a>';
                                                 echo '</div>';

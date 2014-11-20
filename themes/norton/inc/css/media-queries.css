@@ -41,12 +41,20 @@
     .fixed-margin {
         width: 1280px;        
     }
+    
+    button.btn.navbar-toggle {
+        margin-top: 20px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
 
     .panel-row-style {
         width: auto !important;
+    }
+    
+    button.btn.navbar-toggle {
+        margin-top: 20px;
     }
     
 
@@ -145,6 +153,13 @@
         font-size: 12px !important;
     }
     
+    button.btn.navbar-toggle {
+        margin-top: 20px;
+    }
+    
+    .stages-content-area h3 {
+        margin-bottom: 50px !important;
+    }
     
 }
 
@@ -284,4 +299,8 @@
     .mobile-project-link {
         display: none !important;
     }
+    
+    .stages-content-area h3 {
+        margin-bottom: 50px !important;
+    }    
 }

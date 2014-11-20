@@ -324,7 +324,7 @@ function projectMainSlider() {
     $pictures = explode(' ', $pictures);  
     $counter = count($pictures);
     
-    echo '<div class="flexslider">';    
+    echo '<div class="flexslider project-single">';    
       echo '<ul class="slides">';    
         for($i=0; $i<$counter; $i++) {
           echo '<li>';
@@ -347,7 +347,7 @@ function projectSecondarySlider() {
     $pictures = explode(' ', $pictures);  
     $counter = count($pictures);
     
-    echo '<div class="rotating-leader">';    
+    echo '<div class="rotating-leader project-single">';    
       echo '<ul class="slides">';    
         for($x=0; $x<2; $x++) {
             for($i=0; $i<$counter; $i++) {

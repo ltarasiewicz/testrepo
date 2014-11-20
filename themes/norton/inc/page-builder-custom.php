@@ -35,3 +35,9 @@ function myHomestyles_panels_row_styles($styles) {
 	return $styles;
 }
 add_filter('siteorigin_panels_row_styles', 'myHomestyles_panels_row_styles');
+
+function myAboutUs_panels_row_styles($styles) {
+	$styles['myAboutUs'] = __('About Us', 'sparkling');
+	return $styles;
+}
+add_filter('siteorigin_panels_row_styles', 'myAboutUs_panels_row_styles');

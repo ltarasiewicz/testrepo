@@ -46,7 +46,7 @@
                                             echo '<div class="homestyle-tile">';
                                                 echo $item;
                                                 echo '<a href="' . $permalinks[$x] . '">' 
-                                                        . $homestylesPosts[$x]->post_title . 
+                                                        . '<h6>' . $homestylesPosts[$x]->post_title . '</h6>' .
                                                         '<div class="picture-tiles-overlay"></div>' . 
                                                         '</a>';
                                             echo '</div>';
