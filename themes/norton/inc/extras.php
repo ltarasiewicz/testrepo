@@ -352,7 +352,7 @@ function projectSecondarySlider() {
         for($x=0; $x<2; $x++) {
             for($i=0; $i<$counter; $i++) {
               echo '<li>';
-              echo '<div class="box">';  
+              echo '<div class="box">';          
                 echo '<img src="' . $pictures[$i] . '" />';
                 echo '<div class="overlay"></div>';
                 echo '</div>';  

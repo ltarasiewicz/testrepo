@@ -303,4 +303,13 @@
     .stages-content-area h3 {
         margin-bottom: 50px !important;
     }    
+    
+    .panel-row-style-myAboutUs .widget_text .textwidget {    
+        font-size: 11px;
+        line-height: 28px;    
+    }    
+    
+    #pgc-18-3-0 {
+        display: none;
+    }
 }

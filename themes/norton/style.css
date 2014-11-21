@@ -86,9 +86,8 @@ a {
        -o-transition: all 0.3s;
           transition: all 0.3s;
 }
-
-a:hover,
-a:focus {
+//a:focus,
+a:hover {
   color: #EC312C;
   text-decoration: none;
 }

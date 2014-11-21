@@ -66,12 +66,11 @@ $categoryName = implode(' ', $postCategoryArray);
                                                 echo '<div class="col-md-6">';
                                                     echo '<div class="picture-tile-group">';
                                                         echo '<div class="homestyle-tile">';
-                                                            echo $item;
-                                                            echo '<h2 class="mobile-heading">';
-                                                                echo $homestylesPosts[$x]->post_title;
-                                                            echo '</h2>';                                                        
-                                                            echo '<a class="mobile-project-link" href="' . $permalinks[$x] . '">' 
-                                                                    . $homestylesPosts[$x]->post_title . 
+                                                            echo '<a href="' . $permalinks[$x] . '">' 
+                                                                    . $item . 
+                                                                    '<h4>' . $homestylesPosts[$x]->post_title . '</h4>' . 
+
+                                                                    '<h5>' . types_render_field( 'project-slider-caption', array('id' => $post->ID) ) . '</h5>' . 
                                                                     '<div class="picture-tiles-overlay"></div>' . 
                                                                     '</a>';
                                                         echo '</div>';
