@@ -1710,3 +1710,33 @@ figure {
 .project-single {
     //margin-left: -80px;
 }
+
+/* REFACTOR */
+
+.marginalized h1 {
+    margin-top: 0;
+}
+
+.large-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.small-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.small-image img:first-child {
+    //margin-bottom: 30px;
+}
+
+/*.equal {
+    display: table;
+}
+
+.equal [class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+}*/

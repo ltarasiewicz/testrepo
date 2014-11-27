@@ -10,16 +10,12 @@
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <div class="entry-content fixed-margin container reduced-padding">
             <header class="entry-header page-header">
-                <div class="row">                
-                    <div class="col-md-offset-4 col-md-8">
-                        <div class="intro-block">
-                            <p><?php the_content(); ?></p>                        
-                        </div>
-                    </div>
+                <?php get_template_part('partials/intro', 'text'); ?>
+                <div class='row'>
                     <div class="col-md-4 marginalized">
                         <h1><?php the_title(); ?></h1>
-                    </div>                
-                </div> 
+                    </div>   
+                </div>                 
             </header>    
             <div class="row">
                 <div class="col-sm-4">
