@@ -1862,10 +1862,25 @@ figure {
     color: #fff;
     vertical-align: middle;
     padding-left: 64px;
-    text-transform: uppercase;    
+    text-transform: uppercase;   
+    margin-bottom: 160px;
+    margin-top: 0px !important;
 }
 
 .homepage-picture img {
     width: 100%;
     height: auto;
+}
+
+.profile-section {
+    width: 85%;
+}
+
+.profile-section p {
+    padding-left: 63px;
+    padding-top: 40px;
+    font-family: Proxima Nova Light;
+    font-size: 50px;
+    line-height: 70px;   
+    border-top: 1px solid red;
 }
