@@ -16,18 +16,12 @@ get_header(); ?>
 
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 						<div class="entry-content">
-							<?php the_content(); ?>
-                                                    <!-- wp_link_pages() has been removed -->
+                                                    
+							<?php get_template_part( 'home', 'page' ); ?>
+     
 						</div><!-- .entry-content -->
-                                                <!-- edit_post_link() has been removed -->
+                  
 					</article><!-- #post-## -->
-
-
-                                                <!-- get_sidebar('home') has been removed -->
-
-						<!-- Comments have been removed  -->
-
-
 				<?php endwhile; // end of the loop. ?>
 			</div>
 		</main><!-- #main -->
