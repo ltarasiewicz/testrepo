@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 h1,
 .h1 {
-  font-size: 28px;
+  font-size: 34px;
 }
 
 h2,
@@ -1712,9 +1712,17 @@ figure {
 }
 
 /* REFACTOR */
+/* Generic Page */
 
-.marginalized h1 {
-    margin-top: 0;
+
+.first-text-widget {
+    font-family: Proxima Nova Light;
+    font-size: 22px; 
+}
+
+.second-text-widget {
+    font-family: Proxima Nova Light;
+    font-size: 18px; 
 }
 
 .large-image img {
@@ -1727,16 +1735,24 @@ figure {
     height: auto;
 }
 
-.small-image img:first-child {
-    //margin-bottom: 30px;
+/* Awards */
+
+.awards-heading {
+    margin-bottom: 60px;
 }
 
-/*.equal {
-    display: table;
+.awards-heading h2 {
+    display: block;
+    widows: 100%;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #fff;
+    font-size: 22px;
+    font-family: Proxima Nova Light;
 }
 
-.equal [class*="col-"] {
-    float: none;
-    display: table-cell;
-    vertical-align: top;
-}*/
+.award-images img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #fff;
+    margin-bottom: 30px;
+}

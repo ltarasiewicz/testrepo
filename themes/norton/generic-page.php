@@ -13,7 +13,7 @@
                 <?php get_template_part('partials/intro', 'text'); ?>
             </header>        
                 <div class='row'>
-                    <div class="col-md-4 marginalized">
+                    <div class="col-md-4">
                         <h1><?php the_title(); ?></h1>
                     </div>   
                     <div class='col-md-8'>
