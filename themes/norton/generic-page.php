@@ -30,12 +30,12 @@
                     </div>
                         <div class='col-sm-4 col-xs-12'> 
                             <div class="row">
-                                <div class="col-sm-12 col-xs-6">
+                                <div class="col-sm-12 col-xs-6 less-padding-right">
                                     <div class="small-image">
                                         <?php echo types_render_field('small-image-1', array('height' => 251, 'align' => 'right'));?>                      
                                     </div>
                                 </div>
-                                <div class="col-sm-12 col-xs-6">
+                                <div class="col-sm-12 col-xs-6 less-padding-left">
                                     <div class="small-image">
                                         <?php echo types_render_field('small-image-2', array('height' => 251, 'align' => 'right'));?>                      
                                     </div>
