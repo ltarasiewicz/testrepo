@@ -61,9 +61,9 @@ $categoryName = implode(' ', $postCategoryArray);
                     $x = 0;  
                                 foreach ($lists as $items) {
                                     echo '<div class="row row-margin single-project-row">';  
-                                        echo '<div class="col-9-md col-md-offset-3">';
+                                        echo '<div class="col-9-sm col-sm-offset-3" >';
                                             foreach ($items as $item) {                                                                                                              
-                                                echo '<div class="col-md-6">';
+                                                echo '<div class="col-sm-6">';
                                                     echo '<div class="picture-tile-group">';
                                                         echo '<div class="homestyle-tile">';
                                                             echo '<a href="' . $permalinks[$x] . '">' 

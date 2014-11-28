@@ -46,7 +46,7 @@
                             foreach ($lists as $items) {
                                 echo '<div class="row row-margin">';                                                           
                                     foreach ($items as $item) {                                                                                                              
-                                        echo '<div class="col-md-6">';
+                                        echo '<div class="col-sm-6">';
                                             echo '<div class="picture-tile-group">';
                                                 echo '<div class="homestyle-tile">';
                                                     echo '<a href="' . $permalinks[$x] . '">' 

@@ -89,7 +89,7 @@ a {
 //a:focus,
 a:hover {
   color: #EC312C;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 a:focus {
@@ -323,7 +323,7 @@ footer.entry-meta {
   margin-bottom: 0;
 }
 .page-header {
-  margin-top: 60px;
+  margin-top: 50px;
   border-bottom: 0;
   padding-bottom: 0;
 }
@@ -1641,7 +1641,7 @@ figure {
     position: relative;
     z-index: 1;
     font-family: Proxima Nova Regular;
-    font-size: 30px;
+    font-size: 38px;
 }
 
 .stages-content-area {
@@ -1650,7 +1650,7 @@ figure {
     z-index: 1;
 }
 .stages-content-area h3 {
-    margin-bottom: 100px;
+    margin-bottom: 90px;
 }
 
 /* Apply overlay to auto-generated picture tiles on hover */
@@ -1729,12 +1729,14 @@ figure {
 .large-image img {
     max-width: 100%;
     height: auto;
+    max-height: 514px;
 }
 
 .small-image img {
     max-width: 100%;
     height: auto;
     margin-bottom: 25px;
+    max-height: 244px;
 }
 
 h1 {
@@ -1925,4 +1927,23 @@ h1 {
     border-top: 6px solid !important;
     border-right: 6px solid transparent !important;
     border-left: 6px solid transparent !important;
+}
+
+.stages-content-area h3 {
+    font-family: Proxima Nova Bold;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#process-page-content {
+    margin-bottom: 105px;
+}
+
+.single-project-row {
+    margin-left: -20px;
+    margin-right: -15px;      
+}
+
+.homestyle-tile a:hover {
+    text-decoration: none !important;
 }

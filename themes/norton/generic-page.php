@@ -25,19 +25,19 @@
                 <div class="row marginalized generic">
                     <div class='col-sm-8'>
                         <div class="large-image">
-                            <?php echo types_render_field('large-image', array()); ?>
+                            <?php echo types_render_field('large-image', array('width' => 890, 'height' => 514, 'resize' => 'crop')); ?>
                         </div>
                     </div>
                         <div class='col-sm-4 col-xs-12'> 
                             <div class="row">
                                 <div class="col-sm-12 col-xs-6 less-padding-right">
                                     <div class="small-image">
-                                        <?php echo types_render_field('small-image-1', array('height' => 251, 'align' => 'right'));?>                      
+                                        <?php echo types_render_field('small-image-1', array('align' => 'right', 'width' => 352, 'height' => 240,  'resize' => 'crop'));?>                      
                                     </div>
                                 </div>
                                 <div class="col-sm-12 col-xs-6 less-padding-left">
                                     <div class="small-image">
-                                        <?php echo types_render_field('small-image-2', array('height' => 251, 'align' => 'right'));?>                      
+                                        <?php echo types_render_field('small-image-2', array('align' => 'right', 'width' => 352, 'height' => 240, 'resize' => 'crop'));?>                      
                                     </div>
                                 </div>                                
                             </div>

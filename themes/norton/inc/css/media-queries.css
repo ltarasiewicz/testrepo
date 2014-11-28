@@ -262,6 +262,57 @@
         margin-bottom: 10px !important;
     }    
     
+    /* Process Page*/
+    
+    .stage-description h2 {
+        font-size: 20px !important;
+    }
+    
+    .small-number {
+        font-size: 11px !important;
+    }
+    
+    .stages-content-area > h3 {
+        font-size: 13px !important;
+        margin-bottom: 30px !important;
+    }
+    
+    .stages-content-area p {
+        font-size: 11px !important;
+    }
+    
+    .stage-description {
+        min-height: 300px !important;
+    }
+    
+    /* Single Project*/
+    
+    .rotating-leader.project-single {
+        padding-right: 15px !important;
+    }
+    
+    .single-project-row {
+        margin-left: -30px !important;
+        margin-right: -10px !important;        
+    }
+    
+    .homestyle-tile a > h4, .homestyle-tile a > h5 {
+        font-size: 12px !important;
+    }
+    
+    .homestyle-tile a > h4 {
+        line-height: 20px !important;
+        margin-top: 10px !important;
+    }
+    
+    .homestyle-tile a > h5 {
+        margin-bottom: 10px !important;
+    }
+    
+    .project-caption h3 {
+        font-size: 11px !important;
+    }
+    
 }
 
 @media (max-width: 767px) {
@@ -520,4 +571,40 @@
     .less-padding-left {
         padding-left: 7px !important;
     }    
+    
+    /* Process Page*/
+    
+    .stage-description h2 {
+        font-size: 20px !important;
+    }
+    
+    .small-number {
+        font-size: 11px !important;
+    }
+    
+    .stages-content-area > h3 {
+        font-size: 13px !important;
+        margin-bottom: 30px !important;
+    }
+    
+    .stages-content-area p {
+        font-size: 11px !important;
+    }
+    
+    .stage-description {
+        min-height: 300px !important;
+    }    
+    
+    .homestyle-tile a > h4, .homestyle-tile a > h5 {
+    font-size: 12px !important;
+    }
+    
+    .homestyle-tile a > h4 {
+        line-height: 20px !important;
+        margin-top: 10px !important;
+    }
+    
+    .homestyle-tile a > h5 {
+        margin-bottom: 10px !important;
+    }
 }
