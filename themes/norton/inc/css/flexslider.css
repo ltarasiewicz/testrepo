@@ -132,12 +132,13 @@ html[xmlns] .slides {display: block;}
   }
 }
 
-@media screen and (max-width: 860px) {
+@media (min-width: 768px) and (max-width: 860px) {
   .flex-direction-nav .flex-prev { opacity: 1; left: 0px;}
   .flex-direction-nav .flex-next { opacity: 1; right: 0px;} 
   /* Added styles */
-  .flexslider .flex-prev { opacity: 0.7; left: 0px; text-align: center; }
+  .flexslider .flex-prev { opacity: 0.7; left: 15px; text-align: center; }
   .flexslider .flex-next { opacity: 0.7; right: 0px; text-align: center; }
+  .flexslider:hover .flex-prev {left: 15px !important;}
   }
 
 

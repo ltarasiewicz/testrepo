@@ -4,7 +4,7 @@
  */
 ?>
 <div class="row">                
-    <div class="col-md-offset-4 col-md-8">
+    <div class="col-sm-offset-4 col-sm-8">
         <div class="intro-block">
             <p><?php the_content(); ?></p>                        
         </div>

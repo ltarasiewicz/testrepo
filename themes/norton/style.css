@@ -323,7 +323,7 @@ footer.entry-meta {
   margin-bottom: 0;
 }
 .page-header {
-  margin-top: 0;
+  margin-top: 60px;
   border-bottom: 0;
   padding-bottom: 0;
 }
@@ -384,7 +384,7 @@ hr.section-divider {
   margin-bottom: 50px;
 }
 .post-inner-content {
-  padding: 0 0 45px 0;
+  padding: 0 0 25px 0;
   border-top: none;
 }
 
@@ -1714,15 +1714,16 @@ figure {
 /* REFACTOR */
 /* Generic Page */
 
-
 .first-text-widget {
     font-family: Proxima Nova Light;
     font-size: 22px; 
+    margin-bottom: 60px;
 }
 
 .second-text-widget {
     font-family: Proxima Nova Light;
     font-size: 18px; 
+    margin-bottom: 100px;
 }
 
 .large-image img {
@@ -1733,6 +1734,11 @@ figure {
 .small-image img {
     max-width: 100%;
     height: auto;
+    margin-bottom: 25px;
+}
+
+h1 {
+   
 }
 
 /* Awards */
@@ -1873,14 +1879,27 @@ figure {
 }
 
 .profile-section {
-    width: 85%;
+    width: 95%;
 }
 
 .profile-section p {
     padding-left: 63px;
-    padding-top: 40px;
+    padding-top: 35px;
+    padding-right: 85x;
     font-family: Proxima Nova Light;
     font-size: 50px;
-    line-height: 70px;   
+    line-height: 65px;   
     border-top: 1px solid red;
+}
+
+.navbar-toggle .icon-bar {
+    width: 28px !important;
+}
+
+.btn:after {
+    content: 'menu';
+    font-family: Proxima Nova Semibold;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #fff;
 }
