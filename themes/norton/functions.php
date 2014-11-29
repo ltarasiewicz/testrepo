@@ -301,3 +301,9 @@ require get_template_directory() . '/inc/navwalker.php';
  * Add custom styles to rows created with Page Builder
  */
 require get_template_directory() . '/inc/page-builder-custom.php';
+
+/**
+ * Register new image sizes
+ */
+add_image_size('homestyle-tile', 397, 266, true);
+add_image_size('project-tile', 610, 373, true);

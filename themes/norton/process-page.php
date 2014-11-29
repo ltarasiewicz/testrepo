@@ -24,8 +24,9 @@
                             <div class="stage-description" style='background-image: 
                                  url("<?php echo types_render_field( 'stage-1-background-image', 
                                          array( 'output' => 'raw', 
-                                                'width' => '400', 
-                                                'height' => '400') ); ?>");'>
+                                                'width' => 400, 
+                                                'height' => 400,
+                                                'proportional' => false) ); ?>");'>
                                 <h2>1</h2>
                                 <h3 class="small-number">Number 1</h3>
                                 <div class="stages-content-area">
@@ -35,14 +36,14 @@
                             </div>
                             <div class="overlay"></div>
                             <div id="stage-1-picture">
-                                <?php echo types_render_field( 'stage-1-picture', array( 'width' => '400', 'proportional' => true ) ); ?>
+                                <?php echo types_render_field( 'stage-1-picture', array( 'width' => 400, 'height' => 166, 'proportional' => false ) ); ?>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="stage">
                             <div id="stage-2-picture">
-                                <?php echo types_render_field( 'stage-2-picture', array( 'width' => '400', 'proportional' => true ) ); ?>
+                                <?php echo types_render_field( 'stage-2-picture', array( 'width' => 400, 'height' => 166, 'proportional' => false ) ); ?>
                             </div>                        
                             <div class="stage-description">
                                 <h2>2</h2>
@@ -60,8 +61,9 @@
                             <div class="stage-description" style='background-image: 
                                  url("<?php echo types_render_field( 'stage-3-background-image', 
                                          array( 'output' => 'raw', 
-                                                'width' => '400', 
-                                                'height' => '400') ); ?>");'>
+                                                'width' => 400, 
+                                                'height' => 400,
+                                                'proportional' => false) ); ?>");'>
                                 <h2>3</h2>
                                 <h3 class="small-number">Number 3</h3>
                                 <div class="stages-content-area">
@@ -71,7 +73,7 @@
                             </div>
                             <div class="overlay"></div>
                             <div id="stage-3-picture">
-                                <?php echo types_render_field( 'stage-3-picture', array( 'width' => '400', 'proportional' => true ) ); ?>
+                                <?php echo types_render_field( 'stage-3-picture', array( 'width' => 400, 'height' => 166, 'proportional' => false ) ); ?>
                             </div>
                         </div>
                     </div>                
@@ -82,8 +84,9 @@
                             <div class="stage-description" style='background-image: 
                                  url("<?php echo types_render_field( 'stage-4-background-image', 
                                          array( 'output' => 'raw', 
-                                                'width' => '400', 
-                                                'height' => '400') ); ?>");'>
+                                                'width' => 400, 
+                                                'height' => 400,
+                                                'proportional' => false) ); ?>");'>
                                 <h2>4</h2>
                                 <h3 class="small-number">Number 4</h3>
                                 <div class="stages-content-area">
@@ -97,13 +100,14 @@
                     <div class="col-sm-4">                  
                         <div class="stage">
                             <div id="stage-5-picture">
-                                <?php echo types_render_field( 'stage-5-picture', array( 'width' => '400', 'proportional' => true ) ); ?>
+                                <?php echo types_render_field( 'stage-5-picture', array( 'width' => 400, 'height' => 166, 'proportional' => false ) ); ?>
                             </div>                          
                             <div class="stage-description" style='background-image: 
                                  url("<?php echo types_render_field( 'stage-5-background-image', 
                                          array( 'output' => 'raw', 
-                                                'width' => '400', 
-                                                'height' => '400') ); ?>");'>
+                                                'width' => 400, 
+                                                'height' => 400,
+                                                'proportional' => false) ); ?>");'>
                                 <h2>5</h2>
                                 <h3 class="small-number">Number 5</h3>
                                 <div class="stages-content-area">
@@ -119,8 +123,9 @@
                             <div class="stage-description" style='background-image: 
                                  url("<?php echo types_render_field( 'stage-6-background-image', 
                                          array( 'output' => 'raw', 
-                                                'width' => '400', 
-                                                'height' => '400') ); ?>");'>
+                                                'width' => 400, 
+                                                'height' => 400,
+                                                'proportional' => false) ); ?>");'>
                                 <h2>6</h2>
                                 <h3 class="small-number">Number 6</h3>
                                 <div class="stages-content-area">

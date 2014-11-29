@@ -30,7 +30,7 @@
                         $i = 0;
                         while ($query->have_posts()) : $query->the_post();
                             if ( (function_exists( 'has_post_thumbnail' )) && ( has_post_thumbnail() ) ) :
-                              $thumbnails[$i] = get_the_post_thumbnail($post->ID, 'full-size');
+                              $thumbnails[$i] = get_the_post_thumbnail($post->ID, 'project-tile');
                             
                             endif;
                             $permalinks[$i] = get_permalink();
@@ -50,9 +50,8 @@
                                             echo '<div class="picture-tile-group">';
                                                 echo '<div class="homestyle-tile">';
                                                     echo '<a href="' . $permalinks[$x] . '">' 
-                                                            . $item . 
-                                                            '<h4>' . $homestylesPosts[$x]->post_title . '</h4>' . 
-                                                             
+                                                            . '<div class="homestyle-single-picture-tile">' . $item . '</div>' . 
+                                                            '<h4>' . $homestylesPosts[$x]->post_title . '</h4>' .                                                              
                                                             '<h5>' . types_render_field( 'project-slider-caption', array('id' => $post->ID) ) . '</h5>' . 
                                                             '<div class="picture-tiles-overlay"></div>' . 
                                                             '</a>';

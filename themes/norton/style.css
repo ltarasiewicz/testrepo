@@ -1727,16 +1727,16 @@ figure {
 }
 
 .large-image img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     max-height: 514px;
 }
 
 .small-image img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     margin-bottom: 25px;
-    max-height: 244px;
+    max-height: 238px;
 }
 
 h1 {
@@ -1946,4 +1946,50 @@ h1 {
 
 .homestyle-tile a:hover {
     text-decoration: none !important;
+}
+
+/* Limit the height of pictures site-wide */
+
+div.homepage-picture {
+    max-height: 545px; 
+    overflow: hidden;
+}
+
+div.homestyle-single-picture-tile {
+    max-height:373px; 
+    overflow: hidden;
+}
+
+div.homestyles-page-picture-tile {
+    max-height:266px; 
+    overflow: hidden;
+}
+
+div.project-single-picture-tile {
+    max-height: 348px;
+    overflow: hidden;
+}
+
+/* Testimonials Page */
+
+#testimonials-content {
+    margin-bottom: 50px;
+}
+
+.review {
+    margin-bottom: 75px;
+
+}
+
+.testimonial h1 {
+    margin-bottom: 95px;
+    margin-top: -20px;
+}
+
+.testimonial h3 {
+    margin-bottom: 30px;
+}
+
+.quote.second {
+    margin-top: 115px;
 }

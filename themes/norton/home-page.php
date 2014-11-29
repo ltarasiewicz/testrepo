@@ -8,7 +8,7 @@
         </div>
         <div class="col-sm-6">      
             <div class="homepage-picture">
-                <?php the_post_thumbnail();  ?>       
+                <?php the_post_thumbnail('full');  ?>       
             </div>
         </div>    
     </div>
