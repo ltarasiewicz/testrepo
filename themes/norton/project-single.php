@@ -67,12 +67,15 @@ $categoryName = implode(' ', $postCategoryArray);
                                                     echo '<div class="picture-tile-group">';
                                                         echo '<div class="homestyle-tile project-tile">';
                                                             
-                                                                echo  '<div class="project-single-picture-tile">' . $item . '</div>'
-                                                                    . '<a href="' . $permalinks[$x] . '">' .
+                                                                echo '<div class="project-single-picture-tile">' . $item . '</div>';
+                                                                echo '<h3 class="on-mobile">' . $homestylesPosts[$x]->post_title . '</h4>';
+                                                                echo '<div class="static-overlay-on-mobile"></div>';
+                                                                echo '<a href="' . $permalinks[$x] . '">' .
+                                                                        
                                                                     '<h4>' . $homestylesPosts[$x]->post_title . '</h4>' . 
-
                                                                     '<h5>' . types_render_field( 'project-slider-caption', array('id' => $post->ID) ) . '</h5>' . 
                                                                     '<div class="picture-tiles-overlay"></div>' . 
+                                                                        
                                                                     '</a>';
                                                         echo '</div>';
                                                     echo '</div>';     

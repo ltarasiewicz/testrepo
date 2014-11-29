@@ -1993,3 +1993,11 @@ div.project-single-picture-tile {
 .quote.second {
     margin-top: 115px;
 }
+
+.on-mobile {
+    display: none;
+}
+
+.static-overlay-on-mobile {
+    display: none;
+}

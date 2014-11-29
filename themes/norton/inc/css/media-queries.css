@@ -803,12 +803,13 @@
     }
     
     /* Project Single*/
-    
-    .homestyle-tile.project-tile {
-        z-index: 0;
+             
+    .homestyle-tile.project-tile h4, h5 {
+        display: none !important;
     }
-        
-    .homestyle-tile.project-tile h4 {
+    
+    .homestyle-tile.project-tile h3.on-mobile {
+        display: block !important;
         position: absolute;
         width: 100%;
         text-align: center;
@@ -816,14 +817,21 @@
         top: 40%;
         z-index: 1;
         
-    }
+    }    
     
-    .homestyle-tile.project-tile h5 {
+    .homestyle-tile.project-tile a {
         display: none !important;
     }
     
-    .homestyle-tile.project-tile .picture-tiles-overlay {
+    .static-overlay-on-mobile {
+        display: block !important;
+        position: absolute;
+        height: auto;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
         background-color: rgba(0, 0, 0, 0.5);
+        z-index: 0;
     }
-    
 }
