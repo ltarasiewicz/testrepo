@@ -804,6 +804,26 @@
     
     /* Project Single*/
     
-
+    .homestyle-tile.project-tile {
+        z-index: 0;
+    }
+        
+    .homestyle-tile.project-tile h4 {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        margin: 0 !important;
+        top: 40%;
+        z-index: 1;
+        
+    }
+    
+    .homestyle-tile.project-tile h5 {
+        display: none !important;
+    }
+    
+    .homestyle-tile.project-tile .picture-tiles-overlay {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
     
 }

@@ -65,9 +65,10 @@ $categoryName = implode(' ', $postCategoryArray);
                                             foreach ($items as $item) {                                                                                                              
                                                 echo '<div class="col-sm-6">';
                                                     echo '<div class="picture-tile-group">';
-                                                        echo '<div class="homestyle-tile">';
-                                                            echo '<a href="' . $permalinks[$x] . '">' 
-                                                                    . '<div class="project-single-picture-tile">' . $item . '</div>' .
+                                                        echo '<div class="homestyle-tile project-tile">';
+                                                            
+                                                                echo  '<div class="project-single-picture-tile">' . $item . '</div>'
+                                                                    . '<a href="' . $permalinks[$x] . '">' .
                                                                     '<h4>' . $homestylesPosts[$x]->post_title . '</h4>' . 
 
                                                                     '<h5>' . types_render_field( 'project-slider-caption', array('id' => $post->ID) ) . '</h5>' . 
