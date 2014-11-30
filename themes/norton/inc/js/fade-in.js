@@ -1,8 +1,8 @@
 jQuery(document).ready(function($) { 
     
     animatePictures('.homestyle-tile, .stage, .picture-tile-group, \n\
-    .panel-row-style-homePage #gallery-1, .panel-row-style-myPages img, \n\
-    .panel-row-style-myAwards img');  
+    .homepage-picture, .large-image, .small-image, \n\
+    .award-images');  
     
     
 });
