@@ -2009,3 +2009,7 @@ div.project-single-picture-tile {
 .post-inner-content.pull-up {
     margin-top: -25px !important;
 }
+
+#menu-footer-menu li > a:hover {
+    text-decoration: none;
+}

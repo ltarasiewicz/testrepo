@@ -139,7 +139,12 @@ html[xmlns] .slides {display: block;}
   .flexslider .flex-prev { opacity: 0.7; left: 15px; text-align: center; }
   .flexslider .flex-next { opacity: 0.7; right: 0px; text-align: center; }
   .flexslider:hover .flex-prev {left: 15px !important;}
-  }
+  
+  
+  .flexslider.project-single .flex-prev { left: 0 !important;  }
+  .flexslider.project-single .flex-next { right: 15px !important;  }
+  
+}
 
 
 /* =Rotating Leader
@@ -164,7 +169,7 @@ html[xmlns] .slides {display: block;}
   font-size: 18px;
   max-width: 640px;
   display: inline-block;
-  padding: 12px 30px;
+  padding: 14px 30px;
   margin-bottom: 0;
   color: #fff;
   width: 100%;
