@@ -41,12 +41,25 @@
     
     .small-image img {
         margin-bottom: 20px !important;
-    }        
+    }       
+    
+    .stages-content-area h3 {
+        
+        margin-bottom: 60px !important;
+        
+    }
+    
+    .stage-description h2 {
+        
+        font-size: 24px !important;
+        padding: 15px 25px !important;
+        
+    }
 
     
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 991px) {
     
     .row.generic .col-sm-4 {
         width: 30% !important;
@@ -266,7 +279,8 @@
     
     .stage-description h2 {
         font-size: 20px !important;
-    }
+        padding: 15px 25px !important;
+    }   
     
     .small-number {
         font-size: 11px !important;
@@ -374,7 +388,7 @@
     
     .contact-page h2 {
         font-size: 18px !important;
-        margin-bottom: 10px !important;
+        margin-bottom: 10px !important;       
     }
     
     .contact-title-section p {
@@ -672,6 +686,7 @@
     
     .stage-description h2 {
         font-size: 20px !important;
+        padding: 15px 20px !important;
     }
     
     .small-number {
@@ -760,14 +775,14 @@
     /* Contact Page */
     
     .contact-title-section h1 {
-        margin-top: 10px !important;
+        margin-top: 20px !important;
         margin-bottom: 30px !important;
     }
     
     .contact-page h2 {
         font-size: 16px !important;
         margin-bottom: 10px !important;
-        padding-bottom: 10px !important;
+        padding-bottom: 10px !important;       
     }
     
     .contact-title-section p {

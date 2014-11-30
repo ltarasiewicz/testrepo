@@ -305,5 +305,5 @@ require get_template_directory() . '/inc/page-builder-custom.php';
 /**
  * Register new image sizes
  */
-add_image_size('homestyle-tile', 397, 266, true);
-add_image_size('project-tile', 610, 373, true);
+//add_image_size('homestyle-tile', 397, 266, true);
+//add_image_size('project-tile', 610, 373, true);

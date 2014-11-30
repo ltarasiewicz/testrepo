@@ -2001,3 +2001,11 @@ div.project-single-picture-tile {
 .static-overlay-on-mobile {
     display: none;
 }
+
+.page-header {
+    margin: 0 !important;
+}
+
+.post-inner-content.pull-up {
+    margin-top: -25px !important;
+}

@@ -23,7 +23,7 @@ $categoryName = implode(' ', $postCategoryArray);
 
 ?>
 
-<div class="post-inner-content">
+<div class="post-inner-content pull-up">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <div class="top-section">
 	<header class="entry-header page-header">
@@ -49,7 +49,7 @@ $categoryName = implode(' ', $postCategoryArray);
                         $i = 0;
                         while ($query->have_posts()) : $query->the_post();
                             if ( (function_exists( 'has_post_thumbnail' )) && ( has_post_thumbnail() ) ) :
-                              $thumbnails[$i] = get_the_post_thumbnail($post->ID, 'full-size');
+                              $thumbnails[$i] = get_the_post_thumbnail($post->ID, 'full');
                             endif;
                             $permalinks[$i] = get_permalink();
                             $homestylesPosts[$i] = get_post();
