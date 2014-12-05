@@ -231,6 +231,7 @@
         font-size: 13px !important;
     }
     
+    
     #footer-area .footer-widget-area {
         padding-top: 50px !important;
         padding-bottom: 65px !important;
@@ -396,6 +397,7 @@
         line-height: 32px !important;
     }
     
+    .wpcf7-form input[type="email"],
     .wpcf7-form input[type="text"], textarea {
         padding: 5px !important;
     }
@@ -577,6 +579,10 @@
     
     /* Home page*/
     
+    div.homepage-picture img{
+        padding: 0 30px !important;
+    }
+    
     .profile-section  {
         width: 100% !important;
     }
@@ -634,17 +640,31 @@
     .copyright p,
     #colophon ul > li {
         font-size: 12px !important;
+        text-align: left;
     }    
     
     #colophon ul > li {
         display: block !important;
         height: 40px;
         margin-bottom: 10px;
+        text-align: left;
     }
     
     #colophon ul > li:first-child {
         width: 100%;
     }       
+    
+    #colophon li:nth-of-type(2) {
+        float: left !important;        
+    }
+    
+    #colophon li img {
+        margin-right: 15px !important;
+    }
+    
+    .copyright {
+        padding: 0 !important;
+    }
     
     /*Generic page*/
     
@@ -686,7 +706,10 @@
     
     .stage-description h2 {
         font-size: 20px !important;
-        padding: 15px 20px !important;
+        width: 40px !important;
+        height: 40px !important;
+        text-align: center;
+        vertical-align: middle;
     }
     
     .small-number {
@@ -790,6 +813,7 @@
         line-height: 28px !important;
     }
     
+    .wpcf7-form input[type="email"],
     .wpcf7-form input[type="text"], textarea {
         padding: 5px !important;
     }
@@ -802,6 +826,7 @@
         height: 200px !important;
     }
     
+    .wpcf7-form input[type="email"],
     .wpcf7 input, textarea {
         font-size: 80% !important;
     }
@@ -850,6 +875,14 @@
         right: 0px;
         background-color: rgba(0, 0, 0, 0.5);
         z-index: 0;
+    }
+    
+    div.project-single-picture-tile {
+        padding: 0 35px;
+    }
+    
+    .single-project-row {
+        margin-top: 50px !important;
     }
     
 }

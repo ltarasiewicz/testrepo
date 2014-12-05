@@ -350,6 +350,7 @@
 
 /* Contact form */
 
+.wpcf7-form input[type="email"],
 .wpcf7-form input[type="text"], textarea {   
     padding: 10px !important;
     color: #000;   

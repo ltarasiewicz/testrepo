@@ -7,11 +7,13 @@ jQuery(document).ready(function($){$(window).load(function(){
         direction: "vertical",
         animationLoop: false,
         controlNav: false,
-        directionNav: false,
+        directionNav: true,
         slideshowSpeed: 7000,
         animationSpeed: 2000,
         startAt: 0,
-        slideshow: false
+        slideshow: true,
+        asNavFor: '.flexslider',
+        move: 1
     });           
            
     $('.flexslider').flexslider({
@@ -33,18 +35,20 @@ jQuery(document).ready(function($){$(window).load(function(){
 	    // Usability features
 	    pauseOnAction: true,            //Boolean: Pause the slideshow when interacting with control elements, highly recommended.
 	    pauseOnHover: false,            //Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
-	    pauseInvisible: true,       		//{NEW} Boolean: Pause the slideshow when tab is invisible, resume when visible. Provides better UX, lower CPU usage.
+	    pauseInvisible: false,       		//{NEW} Boolean: Pause the slideshow when tab is invisible, resume when visible. Provides better UX, lower CPU usage.
 	    useCSS: true,                   //{NEW} Boolean: Slider will use CSS3 transitions if available
 	    touch: true,                    //{NEW} Boolean: Allow touch swipe navigation of the slider on touch-enabled devices
             directionNav: true,
-            sync: ".rotating-leader"
+            sync: ".rotating-leader",
+            controlNav: false
             
     });    
       
+      
+
     
 });
+
 });
-
-
 
 

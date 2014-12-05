@@ -23,5 +23,5 @@ function adjustLeaderHeight() {
     jQuery('.flex-viewport').height(targetHeight);
     jQuery('.flex-viewport').attr('style', 'min-height: ' + targetHeight + 'px' + ' !important;' + ' overflow: hidden; position: relative');   
     jQuery('.rotating-leader img').attr('style', 'height: ' + targetHeight / 4 + 'px' + ' !important; visibility: visible');
-    jQuery('.rotating-leader.project-single img').attr('style', 'height: ' + targetHeight / 4 + 'px' + ' !important; width: 100%; padding-bottom: 20px;');
+    jQuery('.rotating-leader.project-single img').attr('style', 'height: ' + targetHeight / 5 + 'px' + ' !important; width: 100%; padding-bottom: 20px;' + ' visibility: visible');
 }

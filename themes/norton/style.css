@@ -1633,15 +1633,18 @@ figure {
 
 
 .stage-description h2 {
-    display: inline-block;
+    display: table-cell;
     color: white;
-    background: #ec312c;
-    padding: 20px 30px;
+    background: #ec312c;    
     margin: 0 !important;
     position: relative;
     z-index: 1;
     font-family: Proxima Nova Regular;
-    font-size: 38px;
+    font-size: 35px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .stages-content-area {
@@ -2016,4 +2019,8 @@ div.project-single-picture-tile {
 
 .rotating-leader img {
     visibility: hidden;
+}
+
+.navbar-nav>li>.dropdown-menu {
+    border-radius: 0 !important;
 }

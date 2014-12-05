@@ -11,7 +11,7 @@ jQuery(document).ready(function($){$(window).load(function(){
         slideshowSpeed: 7000,
         animationSpeed: 2000,
         startAt: 0,
-        slideshow: false, 
+        slideshow: false,         
         start: function(slider) {
             showCaption();
         },
@@ -61,7 +61,6 @@ function showCaption() {
     jQuery('.rotating-leader-caption h2').text(caption);
     jQuery('.rotating-leader-caption a').attr('href', link);        
 }  
-
 
 
 
