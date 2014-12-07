@@ -1620,7 +1620,7 @@ figure {
 /* Styles for the process page */
 
 .stage-description {
-    min-height: 500px;
+    height: 430px;
     width: 100%;
     background-color: #000;
     background-repeat: no-repeat;
@@ -1698,9 +1698,16 @@ figure {
     padding: 0 18%;
     position: relative;
     z-index: 1;
+   
 }
 .stages-content-area h3 {
-    margin-bottom: 90px;
+    margin-bottom: 70px;
+}
+
+.stages-content-area p {
+    font-size: 13px;
+    max-height: 14em;
+    overflow: hidden;
 }
 
 /* Apply overlay to auto-generated picture tiles on hover */

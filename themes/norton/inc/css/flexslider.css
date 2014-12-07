@@ -179,18 +179,19 @@ html[xmlns] .slides {display: block;}
   padding-left: 7%;
 }
 .project-link {
-    position: relative;
-    top: 50px;
+    position: relative;    
     font-family: Proxima Nova Bold;
     color: #fff;
     text-align: left;
     display: inherit;
     margin-left: 7%;
+    margin-top: 10%;
     
 }
 
 .project-link:hover {
     color: #ec312c;
+    text-decoration: none;
 }
 
 .project-caption {
