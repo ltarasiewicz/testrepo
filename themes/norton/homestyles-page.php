@@ -39,7 +39,7 @@
                     $lists = array_chunk($thumbnails, 3);
                     $x = 0;  
                         foreach ($lists as $items) {
-                            echo '<div class="row row-margin">';
+                            echo '<div class="row row-margin homestyles-page">';
                                 foreach ($items as $item) {                                                                                                              
                                     echo '<div class="col-md-4">';
                                         echo '<div class="picture-tile-group">';

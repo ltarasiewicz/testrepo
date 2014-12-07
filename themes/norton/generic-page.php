@@ -32,12 +32,12 @@
                             <div class="row">
                                 <div class="col-sm-12 col-xs-6 less-padding-right">
                                     <div class="small-image">
-                                        <?php echo types_render_field('small-image-1', array('align' => 'right', 'width' => 352, 'height' => 240,  'resize' => 'crop'));?>                      
+                                        <?php echo types_render_field('small-image-1', array('align' => 'right', 'width' => 352, 'height' => 230,  'resize' => 'crop'));?>                      
                                     </div>
                                 </div>
                                 <div class="col-sm-12 col-xs-6 less-padding-left">
                                     <div class="small-image">
-                                        <?php echo types_render_field('small-image-2', array('align' => 'right', 'width' => 352, 'height' => 240, 'resize' => 'crop'));?>                      
+                                        <?php echo types_render_field('small-image-2', array('align' => 'right', 'width' => 352, 'height' => 230, 'resize' => 'crop'));?>                      
                                     </div>
                                 </div>                                
                             </div>
@@ -46,7 +46,7 @@
                 <div class="row">
                     <div class='col-sm-8 col-sm-offset-4'>
                          <div class='second-text-widget'>
-                             <p><?php  echo types_render_field('second-paragraph', array('output' => 'raw')); ?></p>
+                             <p><?php  echo types_render_field('second-paragraph', array('output' => 'html')); ?></p>
                          </div>
                     </div>     
                 </div>

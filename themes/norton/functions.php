@@ -204,9 +204,9 @@ function sparkling_scripts() {
   wp_enqueue_style( 'media-queries', get_template_directory_uri().'/inc/css/media-queries.css' );    
   
   // Add Google Fonts
-  wp_register_style( 'sparkling-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700|Roboto+Slab:400,300,700');
+  //wp_register_style( 'sparkling-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700|Roboto+Slab:400,300,700');
 
-  wp_enqueue_style( 'sparkling-fonts' );
+  //wp_enqueue_style( 'sparkling-fonts' );
   
   // Add slider CSS only if is front page ans slider is enabled or it is a single post
   if( (( is_home() || is_front_page() ) && of_get_option('sparkling_slider_checkbox') == 1) || is_single() ) {
@@ -301,9 +301,3 @@ require get_template_directory() . '/inc/navwalker.php';
  * Add custom styles to rows created with Page Builder
  */
 require get_template_directory() . '/inc/page-builder-custom.php';
-
-/**
- * Register new image sizes
- */
-//add_image_size('homestyle-tile', 397, 266, true);
-//add_image_size('project-tile', 610, 373, true);

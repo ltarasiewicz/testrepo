@@ -54,8 +54,8 @@ html[xmlns] .slides {display: block;}
 .flexslider:hover .flex-next { opacity: 0.7; right: 0px; text-align: center; }
 .flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover { opacity: 1; }
 .flex-direction-nav .flex-disabled { opacity: 0!important; filter:alpha(opacity=0); cursor: default; }
-.flex-direction-nav a:before  { font-family: FontAwesome; font-size: 40px; display: inline-block; content: '\f104'; }
-.flex-direction-nav a.flex-next:before  { content: '\f105'; }
+.flex-direction-nav a:before  { font-family: Slant; font-size: 100px; display: inline-block; content: '<'; position: relative; top: -3px; }
+.flex-direction-nav a.flex-next:before  { content: '>'; }
 
 /* Control Nav */
 .flex-control-nav {width: 100%; position: absolute; bottom: -40px; text-align: center;}
@@ -160,26 +160,33 @@ html[xmlns] .slides {display: block;}
   max-width: 100%;
   margin: auto;
   text-align: center;
+  top: 0;
 
 }
 
 .rotating-leader-caption h2 {
   background: #e82a27;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 17px;
   max-width: 640px;
   display: inline-block;
-  padding: 14px 30px;
+  padding: 14px 0;
   margin-bottom: 0;
   color: #fff;
   width: 100%;
   text-transform: uppercase;
+  text-align: left;
+  padding-left: 7%;
 }
 .project-link {
     position: relative;
     top: 50px;
     font-family: Proxima Nova Bold;
     color: #fff;
+    text-align: left;
+    display: inherit;
+    margin-left: 7%;
+    
 }
 
 .project-link:hover {
@@ -218,4 +225,49 @@ html[xmlns] .slides {display: block;}
 
 .main-heading {
     font-size: 34px;
+}
+
+#project-leader-more {   
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 50px;
+    height: 85px;
+    margin: 0 auto;
+    opacity: 0.7;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: -67px;        
+    transform: rotate(-90deg);
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+
+    /* IE */
+    -ms-transform: rotate(-90deg);
+
+    /* Opera */
+    -o-transform: rotate(-90deg);
+
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);    
+    }    
+    
+
+a#project-leader-more:before {
+    font-family: Slant;
+    content: '<';
+    font-size: 80px;
+    position: relative;
+    top: -29px;
+    z-index: 10;
+}
+
+#project-leader-more:hover {
+    cursor: pointer;
+}
+
+.rotating-leader.project-single img:hover {
+    cursor: pointer;
 }

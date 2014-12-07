@@ -30,7 +30,8 @@ $categoryName = implode(' ', $postCategoryArray);
             <div id="projectSliders">
                 <div class="row no-gutter">                              
                     <div class="col-sm-3">
-                        <?php projectSecondarySlider(); ?>
+                        <?php projectSecondarySlider(); ?>   
+                        <a id="project-leader-more"></a>
                     </div>
                     <div class="col-sm-9 main-project-slider">
                         <?php projectMainSlider(); ?>

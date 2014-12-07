@@ -30,7 +30,7 @@
                         $i = 0;
                         while ($query->have_posts()) : $query->the_post();
                             if ( (function_exists( 'has_post_thumbnail' )) && ( has_post_thumbnail() ) ) :
-                              $thumbnails[$i] = get_the_post_thumbnail($post->ID, 'project-tile');
+                              $thumbnails[$i] = get_the_post_thumbnail($post->ID);
                             
                             endif;
                             $permalinks[$i] = get_permalink();
@@ -44,7 +44,7 @@
                         $lists = array_chunk($thumbnails, 2);
                         $x = 0;  
                             foreach ($lists as $items) {
-                                echo '<div class="row row-margin">';                                                           
+                                echo '<div class="row row-margin homestyle-single">';                                                           
                                     foreach ($items as $item) {                                                                                                              
                                         echo '<div class="col-sm-6">';
                                             echo '<div class="picture-tile-group">';

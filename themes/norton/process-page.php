@@ -36,15 +36,19 @@
                             </div>
                             <div class="overlay"></div>
                             <div id="stage-1-picture">
-                                <?php echo types_render_field( 'stage-1-picture', array( 'width' => 400, 'height' => 166, 'proportional' => false ) ); ?>
+                                <?php echo types_render_field( 'stage-1-picture-1', array( 'width' => 200, 'height' => 166, 'proportional' => false ) ); ?>
+                                <?php echo types_render_field( 'stage-1-picture-2', array( 'width' => 200, 'height' => 166, 'proportional' => false ) ); ?>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="stage">
+                            <div class="clearfix margin"></div>
                             <div id="stage-2-picture">
-                                <?php echo types_render_field( 'stage-2-picture', array( 'width' => 400, 'height' => 166, 'proportional' => false ) ); ?>
-                            </div>                        
+                                <?php echo types_render_field( 'stage-2-picture-1', array( 'width' => 200, 'height' => 166, 'proportional' => false ) ); ?>
+                                <?php echo types_render_field( 'stage-2-picture-2', array( 'width' => 200, 'height' => 166, 'proportional' => false ) ); ?>
+                            </div>
+                            
                             <div class="stage-description">
                                 <h2>2</h2>
                                 <h3 class="small-number">Number 2</h3>

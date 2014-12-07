@@ -66,6 +66,12 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2014 Automatt
     font-weight: 400;
 }
 
+@font-face {
+    font-family: Slant;
+    src: url('inc/fonts/SLANT.TTF');
+    font-weight: 400;
+}
+
 strong {
     font-family: Proxima Nova Bold;
 }
@@ -73,7 +79,7 @@ strong {
 body {
   background-color: #000;
   word-wrap: break-word;
-  font-family: 'Open Sans', sans-serif;
+  //font-family: 'Open Sans', sans-serif;
   line-height: 1.7;
   font-size: 14px;
 }
@@ -827,7 +833,7 @@ button:hover {
 
 .navbar.navbar-default {
   background-color: #000;
-  font-family: 'Open Sans', serif;
+  //font-family: 'Open Sans', serif;
   margin-bottom: 0;
   font-weight: 500;
 }
@@ -926,6 +932,7 @@ button:hover {
 .navbar-nav > li > .dropdown-menu {
   padding: 0;
 }
+
 .navbar-nav > li > a {
   padding-top: 18px;
   padding-bottom: 18px;
@@ -950,6 +957,15 @@ button:hover {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+}
+
+@media (min-width: 1250px) {
+    .navbar-collapse.navbar-ex1-collapse.collapse.in {
+        width: auto !important;
+    }
+    .caret {
+        display: none !important;
+    }
 }
 
 /* =Comments
@@ -1493,6 +1509,10 @@ button[type=submit],
     background-color: #fff !important;
 }
 
+.navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 6px !important;
+}
+
 .navbar-collapse, .navbar-default {
    // border: none;
 }
@@ -1600,7 +1620,7 @@ figure {
 /* Styles for the process page */
 
 .stage-description {
-    min-height: 400px;
+    min-height: 500px;
     width: 100%;
     background-color: #000;
     background-repeat: no-repeat;
@@ -1608,26 +1628,53 @@ figure {
 }
 
 #stage-1-picture,
-#stage-2-picture,
-#stage-3-picture,
-#stage-5-picture {
+#stage-3-picture {
     margin-top: 20px;
     position: relative;
     z-index: 1;
 }
 
-#stage-1-picture,
+#stage-2-picture, 
+#stage-5-picture {   
+    z-index: 1;
+    position: relative;
+        
+}
+
+
 #stage-2-picture,
 #stage-5-picture {
-    margin-bottom: 20px;
+    overflow: hidden;
 }
-#stage-1-picture img,
-#stage-2-picture img,
+
+
+#stage-2-picture,
+#stage-5-picture,
+#stage-3-picture{
+    margin-bottom: 15px;
+}
+
 #stage-3-picture img,
 #stage-5-picture img {
     width: 100%;
     height: auto;
 }
+
+#stage-1-picture img,
+#stage-2-picture img {
+    width: 48%;
+    height: auto;    
+}
+
+#stage-1-picture img:first-child,
+#stage-2-picture img:first-child {
+    float: left;    
+}
+#stage-1-picture img:nth-child(2),
+#stage-2-picture img:nth-child(2) {
+    float: right;
+}
+
 
 
 
@@ -1710,9 +1757,17 @@ figure {
 }
 
 /* Project slider - adjust width of columns*/
-.project-single {
-    //margin-left: -80px;
+#projectSliders .col-sm-9 {
+    width: 81% !important;
 }
+
+#projectSliders .col-sm-3 {
+    width: 19% !important;
+}
+
+
+
+
 
 /* REFACTOR */
 /* Generic Page */
@@ -1738,7 +1793,7 @@ figure {
 .small-image img {
     width: 100%;
     height: auto;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
     max-height: 238px;
 }
 
@@ -1758,7 +1813,7 @@ h1 {
     border-bottom: 1px solid #fff;
     font-size: 22px;
     font-family: Proxima Nova Light;
-    
+    text-transform: uppercase;
 }
 
 .award-images img {
@@ -1820,7 +1875,8 @@ h1 {
     margin-left: 30px;   
     padding-left: 0 !important;
     font-family: Proxima Nova Light;
-    font-size: 28px;        
+    font-size: 28px;    
+    margin-top: 115px;
 }
 
 .quote:before {
@@ -1901,13 +1957,13 @@ h1 {
     width: 28px !important;
 }
 
-.btn:after {
+/*.btn:after {
     content: 'menu';
     font-family: Proxima Nova Semibold;
     font-size: 10px;
     text-transform: uppercase;
     color: #fff;
-}
+}*/
 
 .collapse.in ul li {
     border-bottom: 1px solid #373738;
@@ -1930,6 +1986,14 @@ h1 {
     border-top: 6px solid !important;
     border-right: 6px solid transparent !important;
     border-left: 6px solid transparent !important;
+    float: right;
+    color: #000;
+}
+
+.dropdown.open .dropdown-toggle .caret {
+    transform: rotate(90deg);
+    position: relative;
+    top: 15px;
 }
 
 .stages-content-area h3 {
@@ -1959,7 +2023,7 @@ div.homepage-picture {
 }
 
 div.homestyle-single-picture-tile {
-    max-height:373px; 
+    height:357px; 
     overflow: hidden;
 }
 
@@ -2023,4 +2087,34 @@ div.project-single-picture-tile {
 
 .navbar-nav>li>.dropdown-menu {
     border-radius: 0 !important;
+    top: 78px;
 }
+
+/* Mobile menu */
+
+.collapsing,
+.navbar-collapse.navbar-ex1-collapse.collapse.in,
+.navbar-collapse .navbar-ex1-collapse .collapse .in {
+    position: absolute !important;
+    width: 400px;
+    background-color: #000 !important;
+    z-index: 100 !important;
+    right: 0;
+}
+
+
+
+.navbar-nav .open .dropdown-menu>li>a {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+.caret:before {
+    font-family: Slant;
+    content: '>';
+    font-size: 35px;
+    position: relative;
+    left: -10px;
+    color: #fff;
+}
+

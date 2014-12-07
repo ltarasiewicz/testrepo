@@ -9,7 +9,7 @@ jQuery(document).ready(function($){$(window).load(function(){
         controlNav: false,
         directionNav: false,
         slideshowSpeed: 7000,
-        animationSpeed: 2000,
+        animationSpeed: 1000,
         startAt: 0,
         slideshow: false,         
         start: function(slider) {
@@ -32,7 +32,7 @@ jQuery(document).ready(function($){$(window).load(function(){
 	    startAt: 0,                     //Integer: The slide that the slider should start on. Array notation (0 = first slide)
 	    slideshow: true,                //Boolean: Animate slider automatically
 	    slideshowSpeed: 7000,           //Integer: Set the speed of the slideshow cycling, in milliseconds
-	    animationSpeed: 2000,            //Integer: Set the speed of animations, in milliseconds
+	    animationSpeed: 1000,            //Integer: Set the speed of animations, in milliseconds
 	    initDelay: 0,                   //{NEW} Integer: Set an initialization delay, in milliseconds
 	    randomize: false,               //Boolean: Randomize slide order
 	    fadeFirstSlide: true,           //Boolean: Fade in the first slide when animation type is "fade"

@@ -292,7 +292,7 @@ function rotatingLeader_featured_slider() {
             
               echo '<li>';
                 if ( (function_exists( 'has_post_thumbnail' )) && ( has_post_thumbnail() ) ) :
-                  echo '<div class="box">';  
+                  echo '<div class="box homepage">';  
                     echo get_the_post_thumbnail();
                     echo '<div class="overlay"></div>';
                   echo '</div>';
@@ -307,7 +307,7 @@ function rotatingLeader_featured_slider() {
             echo '<a href="'. get_permalink() .'">';
               echo '<h2 class="entry-title"></h2>';
             echo '</a>';  
-             echo '<a class="project-link" href="'. get_permalink() .'">VIEW PROJECT</a>';
+             echo '<a class="project-link" href="'. get_permalink() .'">VIEW HOMESTYLE</a>';
           echo '</div>';               
     echo ' </div>';
   }
@@ -353,13 +353,13 @@ function projectSecondarySlider() {
             for($i=0; $i<$counter; $i++) {
               echo '<li>';
               echo '<div class="box">';          
-                echo '<img src="' . $pictures[$i] . '" />';
+                echo '<img class="' . $i .'" src="' . $pictures[$i] . '" />';
                 echo '<div class="overlay"></div>';
                 echo '</div>';  
               echo '</li>';         
             }
         }    
-      echo '</ul>';
+      echo '</ul>';   
     echo ' </div>';
 }
 
